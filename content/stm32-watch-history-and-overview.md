@@ -9,6 +9,8 @@ tags = ["STM32", "Watch", "Project"]
 
 I regularly read [Hackaday](https://hackaday.com/) and browse through projects on [Hackaday.io](https://hackaday.io/). One of the projects I came across was this *really sexy* watch called [Chronio](https://hackaday.io/project/12876-chronio) by user Max K. I wanted a watch just like Max K's but I wanted to do something I can call mine.
 
+<!-- more -->
+
 ![Max K's Chronio (smart)watch.](/images/watch-images/max_k_watch.jpg)
 
 Around this time, I had gotten myself an inexpensive STM32 development board: the [NUCLEO-F411RE](http://www.st.com/en/evaluation-tools/nucleo-f411re.html). I wanted to try something beyond Arduino; AVR would've been the next logical step but the price of these Nucleo boards is ultimately what made me choost ST's ARM microcontrollers.
