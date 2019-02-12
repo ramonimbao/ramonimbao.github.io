@@ -1,6 +1,8 @@
 # The URL the site will be built for
 base_url = "https://ramonimbao.github.io/"
 
+title = "Ramon Imbao's Blog"
+
 # Whether to automatically compile all Sass files in the sass directory
 compile_sass = true
 
@@ -23,4 +25,5 @@ even_title = "Ramon Imbao's Blog"
 even_menu = [
     {url = "$BASE_URL", name = "Home"},
     {url = "$BASE_URL/tags", name = "Tags"},
+    {url = "$BASE_URL/3d", name = "3D"}
 ]
