@@ -1,9 +1,9 @@
 +++
 
-title = "Hello, world!"
+title = "Migration from WordPress"
 date = 2019-02-12
 category = "test"
 
 +++
 
-This is a test for the blog post.
+Hey there. I'm in the process of moving my blog pages from WordPress to Github Pages.
