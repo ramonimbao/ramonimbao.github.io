@@ -1,6 +1,8 @@
 # The URL the site will be built for
 base_url = "https://ramonimbao.github.io/"
 
+title = "Ramon Imbao's Blog"
+
 # Whether to automatically compile all Sass files in the sass directory
 compile_sass = true
 
@@ -11,11 +13,15 @@ highlight_code = true
 # Whether to build a search index to be used later on by a JavaScript library
 build_search_index = false
 
+# Set theme to feather
 theme = "feather"
+
+
 
 [extra]
 
 # Put all your custom variables here
-feather_header_image = "/gray.png"
+feather_header_image = "/images/gray.png"
 
-feather_disqus_code = "<div id='disqus_thread'></div><script>var disqus_config = function () { this.page.url = {{ page.current_url }}; this.page.identifier = {{ page.current_url }}; };(function() { var d = document, s = d.createElement('script'); s.src = 'https://ramonimbao.disqus.com/embed.js'; s.setAttribute('data-timestamp', +new Date()); (d.head || d.body).appendChild(s); })();</script><noscript>Please enable JavaScript to view the <a href='https://disqus.com/?ref_noscript' rel='nofollow'>comments powered by Disqus.</a></noscript>"
+feather_disqus_code = "<div id='disqus_thread'></div><script>    (function() {        var d = document, s = d.createElement('script');                s.src = 'https://ramonimbao.disqus.com/embed.js';                s.setAttribute('data-timestamp', +new Date());        (d.head || d.body).appendChild(s);    })();</script><noscript>Please enable JavaScript to view the <a href='https://disqus.com/?ref_noscript' rel='nofollow'>comments powered by Disqus.</a></noscript>"
+#feather_disqus_code = "<div id='disqus_thread'></div><script>var disqus_config = function () { this.page.url = {{ page.current_url }}; this.page.identifier = {{ page.current_url }}; };(function() { var d = document, s = d.createElement('script'); s.src = 'https://ramonimbao.disqus.com/embed.js'; s.setAttribute('data-timestamp', +new Date()); (d.head || d.body).appendChild(s); })();</script><noscript>Please enable JavaScript to view the <a href='https://disqus.com/?ref_noscript' rel='nofollow'>comments powered by Disqus.</a></noscript>"
