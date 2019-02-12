@@ -2,7 +2,8 @@
 
 title = "Migration from WordPress"
 date = 2019-02-12
-category = "test"
+[taxonomies]
+tags = ["Other"]
 
 +++
 
