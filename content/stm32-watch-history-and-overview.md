@@ -2,7 +2,8 @@
 
 title = "DIY STM32 Watch — History & Overview"
 date = 2017-02-25
-category = "test"
+[taxonomies]
+tags = ["STM32", "Watch", "Project"]
 
 +++
 
