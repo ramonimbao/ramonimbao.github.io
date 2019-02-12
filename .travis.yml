@@ -13,5 +13,5 @@ after_success: |
   [ $TRAVIS_PULL_REQUEST = false ] &&
   zola build &&
   sudo pip install ghp-import &&
-  ghp-import -n -b master public &&
+  ghp-import -n -p -f -b master public &&
   git push -fq https://ramonimbao:${GH_TOKEN}@github.com/@github.com/ramonimbao/ramonimbao.github.io.git HEAD:master
