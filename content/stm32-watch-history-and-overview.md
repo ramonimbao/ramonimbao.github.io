@@ -11,7 +11,7 @@ I regularly read [Hackaday](https://hackaday.com/) and browse through projects o
 
 <!-- more -->
 
-![Max K's Chronio (smart)watch.](/images/watch-images/max_k_watch.jpg)
+{{ image(src="/images/watch-images/max_k_watch.jpg", description="Max K's Chronio Watch") }}
 
 Around this time, I had gotten myself an inexpensive STM32 development board: the [NUCLEO-F411RE](http://www.st.com/en/evaluation-tools/nucleo-f411re.html). I wanted to try something beyond Arduino; AVR would've been the next logical step but the price of these Nucleo boards is ultimately what made me choost ST's ARM microcontrollers.
 
@@ -23,7 +23,7 @@ I also modeled a basic rectangular enclosure for it in [FreeCAD](https://www.fre
 
 I still had university, so I didn't work on my watch as often. But two board revisions, countless grams of filament, and around four months later, I *kinda* finished my watch!
 
-![My STM32-based DIY watch. It's only kinda finished.](/images/watch-images/my_diy_watch.jpg)
+{{ image(src="/images/watch-images/my_diy_watch.jpg", description="My STM32-based DIY watch. It's only kinda finished." )}}
 
 I say *kinda* because the code is still unfinished, but it very much works if you don't mind having to adjust it a few minutes forward every day. I'm still waiting for parts to arrive from Mouser, but here are the specs of the watch:
 

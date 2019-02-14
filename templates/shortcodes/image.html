@@ -1,0 +1,14 @@
+<div>
+	<figure>
+	    <img class="lazy" data-src="{{ src }}">
+	    <noscript>
+	        <img src="{{ src }}">
+	    </noscript>
+    
+    	<figcaption>
+			{% if link %}<a href="{{ link }}">{% endif %}
+        		{{ description }}
+        	{% if link %}</a>{% endif %}
+    	</figcaption>
+    </figure>
+</div>
