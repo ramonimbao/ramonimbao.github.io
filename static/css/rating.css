@@ -51,28 +51,36 @@ main .about .rating-table tr:hover {
   background-color: #fefefe;
 }
 
+#quality-score, #speed-score, #comm-score, #service-score {
+  padding-left: 10px;
+  display: inline-block;
+}
+
 @media 
 only screen and (max-width: 760px),
 (min-device-width: 768px) and (max-device-width: 1024px)  {
 
 	/* Force table to not be like tables anymore */
 	table, thead, tbody, th, td, tr { 
-		display: block; 
+    display: block; 
+    border: none;
 	}
 	
 	/* Hide table headers (but not display: none;, for accessibility) */
 	thead tr { 
 		position: absolute;
 		top: -9999px;
-		left: -9999px;
+    left: -9999px;
+    border: none;
 	}
 	
-	tr { border: 1px solid #ccc; }
+	tr {
+    border: none;
+  }
 	
 	td { 
 		/* Behave  like a "row" */
 		border: none;
-		border-bottom: 1px solid #eee; 
 		position: relative;
 		padding-left: 50%; 
 	}
