@@ -8,6 +8,7 @@
   position: relative;
   padding: 0;
   text-shadow: 0px 1px 0 #a2a2a2;
+  display: inline-block;
 }
 .star-ratings-css-top {
   color: #e7711b;
@@ -25,14 +26,21 @@
   z-index: 0;
 }
 
-main .about .rating-table th, main .about .rating-table td, main .post .rating-table th, main .post .rating-table td {
-  border: 1px;
-  box-shadow: none;
+.rating-table h2 {
+  margin: 0;
 }
 
-.rating-table {
-  padding-bottom: 20px;
+main .about .rating-table th, main .about .rating-table td, main .post .rating-table th, main .post .rating-table td {
+  border: 0;
   box-shadow: none;
+  min-width: 100%;
+}
+
+.rating-table td {
+  padding-bottom: 20px;
+  border: 0;
+  box-shadow: none;
+  min-width: 200px;
 }
 
 main .about .rating-table tr:hover {
