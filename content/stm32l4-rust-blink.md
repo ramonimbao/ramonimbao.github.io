@@ -176,11 +176,11 @@ error: Could not compile `stm32l4xx-hal`.
 To learn more, run the command again with --verbose.
 ```
 
-Oh no. What are these errors? Apparently, `CRRCR` can't be found. The problem for us is that it's trying to access `CRRCR` though it's missing. According to §6.4.31 of the reference manual, the register is present only on L496/L4A6 devices. Apparently, there has been an [issue filed](https://github.com/stm32-rs/stm32l4xx-hal/issues/32) regarding this, but hasn't been fixed yet. So until it gets fixed, let's go ahead and clone the `stm32l4xx-hal` repository and "fix" the problem.
+Oh no. What are these errors? Apparently, `CRRCR` can't be found. The problem for us is that it's trying to access `CRRCR` though it's missing. According to §6.4.31 of the reference manual, the register is present only on L496/L4A6 devices. There has been an [issue filed](https://github.com/stm32-rs/stm32l4xx-hal/issues/32) regarding this, but the issue is still open. So until it gets fixed, let's go ahead and clone the `stm32l4xx-hal` repository and "fix" the problem.
 
 ### Cloning and applying the fix
 
-Let's go ahead and `git clone` the crate to the same folder we have our `l4-blink` project. Now in `Cargo.toml` of our `l4-lcd` project, I'll modify the `stm32l4xx-hal` dependency to the following:
+Let's `git clone` the crate to the same folder we have our `l4-blink` project. Now in `Cargo.toml` of our `l4-blink` project, I'll modify the `stm32l4xx-hal` dependency to the following:
 
 ```toml
 [dependencies.stm32l4xx-hal]
