@@ -7,13 +7,13 @@ tags = ["STM32", "Rust", "Exploration"]
 
 +++
 
-## Introduction
-
 I've been learning the [Rust programming language](https://www.rust-lang.org/) for a while now, and while it's been fun implementing [Conway's Game of Life](https://github.com/ramonimbao/game_of_life) or a [Raytracer in one weekend](https://github.com/ramonimbao/rt1w)), I wanted to give embedded Rust a try. I have several development boards lying around, and I want to try using Rust on one of them. I'll be using an [STM32L476 Discovery board](https://www.st.com/en/evaluation-tools/32l476gdiscovery.html) only because of its boatload of peripherals available on the board.
 
 This is by no means a tutorial; I just want to document all the things I've done regarding my experimentation with it. Eventually I'd like to implement a board support package crate for the discovery board I'm using.
 
 <!-- more -->
+
+**2019-03-09 UPDATE:** Apparently, this doesn't compile as-is and I modified my local libraries as a test but forgot to note that it wouldn't work without the modifications, so I'm adding extra steps to rectify the problems.
 
 ---
 
@@ -66,6 +66,8 @@ features = ["stm32l4x6", "rt"]
 version = "0.6"
 features = ["stm32l4x6", "rt"]
 ```
+
+---
 
 ## Getting blink to work
 
@@ -134,6 +136,119 @@ loop {
 
 Alright! That's all the code. Let's go compile it by running `cargo build`.
 
+```
+error[E0412]: cannot find type `CRRCR` in module `rcc`
+   --> C:\Users\ramonimbao\.cargo\registry\src\github.com-1ecc6299db9ec823\stm32l4xx-hal-0.3.6\src\rcc.rs:118:45
+    |
+118 |     pub(crate) fn crrcr(&mut self) -> &rcc::CRRCR {
+    |                                             ^^^^^ not found in `rcc`
+help: possible candidate is found in another module, you can import it into scope
+    |
+3   | use crate::rcc::CRRCR;
+    |
+
+error[E0609]: no field `crrcr` on type `stm32l4::stm32l4x6::rcc::RegisterBlock`
+   --> C:\Users\ramonimbao\.cargo\registry\src\github.com-1ecc6299db9ec823\stm32l4xx-hal-0.3.6\src\rcc.rs:120:33
+    |
+120 |         unsafe { &(*RCC::ptr()).crrcr }
+    |                                 ^^^^^ unknown field
+    |
+    = note: available fields are: `cr`, `icscr`, `cfgr`, `pllcfgr`, `pllsai1cfgr` ... and 25 others
+
+error[E0609]: no field `crrcr` on type `&stm32l4::stm32l4x6::rcc::RegisterBlock`
+   --> C:\Users\ramonimbao\.cargo\registry\src\github.com-1ecc6299db9ec823\stm32l4xx-hal-0.3.6\src\rcc.rs:507:21
+    |
+507 |                 rcc.crrcr.modify(|_, w| w.hsi48on().set_bit());
+    |                     ^^^^^
+
+error[E0609]: no field `crrcr` on type `&stm32l4::stm32l4x6::rcc::RegisterBlock`
+   --> C:\Users\ramonimbao\.cargo\registry\src\github.com-1ecc6299db9ec823\stm32l4xx-hal-0.3.6\src\rcc.rs:509:27
+    |
+509 |                 while rcc.crrcr.read().hsi48rdy().bit_is_clear() {}
+    |                           ^^^^^
+
+error: aborting due to 4 previous errors
+
+Some errors occurred: E0412, E0609.
+For more information about an error, try `rustc --explain E0412`.
+error: Could not compile `stm32l4xx-hal`.
+
+To learn more, run the command again with --verbose.
+```
+
+Oh no. What are these errors? Apparently, `CRRCR` can't be found. The problem for us is that it's trying to access `CRRCR` though it's missing. According to §6.4.31 of the reference manual, the register is present only on L496/L4A6 devices. Apparently, there has been an [issue filed](https://github.com/stm32-rs/stm32l4xx-hal/issues/32) regarding this, but hasn't been fixed yet. So until it gets fixed, let's go ahead and clone the `stm32l4xx-hal` repository and "fix" the problem.
+
+### Cloning and applying the fix
+
+Let's go ahead and `git clone` the crate to the same folder we have our `l4-blink` project. Now in `Cargo.toml` of our `l4-lcd` project, I'll modify the `stm32l4xx-hal` dependency to the following:
+
+```toml
+[dependencies.stm32l4xx-hal]
+version = "0.3"
+path = "../stm32l4xx-hal"
+features = ["stm32l4x6", "rt"]
+```
+
+Now since the `CRRCR` register isn't present on the STM32L476 device that's on the Discovery board, let's just go ahead and comment out all occurrences of `crrcr` in the `src/rcc.rs` file.
+
+As of commit `31f7100`, the following changes were made:
+
+```diff
+diff --git a/src/rcc.rs b/src/rcc.rs
+index 91b179e..f774474 100644
+--- a/src/rcc.rs
++++ b/src/rcc.rs
+@@ -54,7 +54,7 @@ impl RccExt for RCC {
+             apb2: APB2 { _0: () },
+             bdcr: BDCR { _0: () },
+             csr: CSR { _0: () },
+-            crrcr: CRRCR { _0: () },
++            //crrcr: CRRCR { _0: () },
+             cfgr: CFGR {
+                 hclk: None,
+                 hsi48: false,
+@@ -89,8 +89,8 @@ pub struct Rcc {
+     pub bdcr: BDCR,
+     /// Control/Status Register
+     pub csr: CSR,
+-    /// Clock recovery RC register
+-    pub crrcr: CRRCR,
++    // Clock recovery RC register
++    //pub crrcr: CRRCR,
+ }
+ 
+ /// CSR Control/Status Register
+@@ -107,6 +107,7 @@ impl CSR {
+     }
+ }
+ 
++/*
+ /// Clock recovery RC register
+ pub struct CRRCR {
+     _0: (),
+@@ -127,6 +128,7 @@ impl CRRCR {
+         self.crrcr().read().hsi48rdy().bit()
+     }
+ }
++*/
+ 
+ /// BDCR Backup domain control register registers
+ pub struct BDCR {
+@@ -504,9 +506,9 @@ impl CFGR {
+             // Turn on USB, RNG Clock using the HSI48 CLK source (default)
+             if self.hsi48 {
+                 // p. 180 in ref-manual
+-                rcc.crrcr.modify(|_, w| w.hsi48on().set_bit());
++                //rcc.crrcr.modify(|_, w| w.hsi48on().set_bit());
+                 // Wait until HSI48 is running
+-                while rcc.crrcr.read().hsi48rdy().bit_is_clear() {}
++                //while rcc.crrcr.read().hsi48rdy().bit_is_clear() {}
+             }
+         }
+```
+
+Running `cargo build` should compile the project without any problems.
+
 ### Running on the discovery board
 
 Open another command prompt window and start OpenOCD with:
@@ -145,6 +260,8 @@ openocd -f interface/stlink.cfg -f target/stm32l4x.cfg
 Then simply call `cargo run` to let the debugger connect to OpenOCD. I input `c` to step through the breakpoints until I get to the loop.
 
 {{ video(src="/images/l4-blink/blinky.mp4", description="Blinky LEDs on the Discovery board") }}
+
+---
 
 ## GitHub repository
 
