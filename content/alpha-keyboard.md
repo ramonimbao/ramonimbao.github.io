@@ -29,4 +29,4 @@ This was printed using some pink ABS filament that have been waiting to put to u
 
 ## Files
 
-The STL files and the firmware files can be downloaded from [this repository](https://github.com/ramonimbao/). Also included are the STL files for the 3D printable 1u and 2u keycaps.
+The STL files and the firmware files can be downloaded from [this repository](https://github.com/ramonimbao/Alpha_Handwired_3D). Also included are the STL files for the 3D printable 1u and 2u keycaps.
