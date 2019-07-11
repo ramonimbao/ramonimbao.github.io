@@ -55,4 +55,4 @@ I'd like to implement a red backlight for the keyboard. I even mounted the switc
 
 ## Files
 
-The files for this keyboard will not be made available because I haven't even asked permission from the original creators of both the Alice and Prime E.
+The files for the keyboard are available in [this repository](https://github.com/ramonimbao/Alice-like_Handwired) under the MIT license.
