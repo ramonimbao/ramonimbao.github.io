@@ -16,3 +16,19 @@ p.indent {
 p.bold {
   font-weight: bold;
 }
+
+.align-left {
+  float: left;
+}
+
+.align-right {
+  float: right;
+}
+
+.under {
+  clear: both;
+}
+
+.entry {
+  margin-bottom: 5%;
+}

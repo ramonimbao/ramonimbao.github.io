@@ -1,4 +1,8 @@
-<h2 class="entry">{{ entry }}</h2>
-{% if sub %}<p class="sub">{{ sub }}</p>{% endif %}
-{% if highlight %}<p class="indent bold">{{ highlight }}</p>{% endif %}
-<p class="indent">{{ description }}</p>
+<div class="entry">
+    <h2 class="entry">{% if date %}<div class="align-left">{% endif %}{{ title }}{% if date %}</div><div class="align-right">({{ date }})</div>{% endif %}</h2>
+    <div class="under">
+        {% if sub %}<p class="sub">{{ sub }}</p>{% endif %}
+        {% if highlight %}<p class="indent bold">{{ highlight }}</p>{% endif %}
+        <p class="indent">{{ description }}</p>
+    </div>
+</div>
