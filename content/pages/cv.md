@@ -38,7 +38,7 @@ template = "blank.html"
 
 {{ entry(entry="Guitar Section Head (Jun 2013—Oct 2015)", sub="Ateneo Blue Symphony", description="I helped the other members of the orchestra's guitar section with learning and understanding musical pieces for concerts.") }}
 
-{{ entry(entry="Graphics Designer", sub="Ateneo Electronics and Computer Engineering Society, Ateneo Musicians' Pool", description="I designed posters for use as promotional materials for org events.") }}
+{{ entry(entry="Graphics Designer (Jun 2011—Mar 2013)", sub="Ateneo Electronics and Computer Engineering Society, Ateneo Musicians' Pool", description="I designed posters for use as promotional materials for org events.") }}
 
 # Certifications
 
