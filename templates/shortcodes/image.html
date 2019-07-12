@@ -4,11 +4,13 @@
 	    <noscript>
 	        <img src="{{ src }}">
 	    </noscript>
-    
+	
+		{% if description %}
     	<figcaption>
 			{% if link %}<a href="{{ link }}">{% endif %}
         		{{ description }}
         	{% if link %}</a>{% endif %}
-    	</figcaption>
+		</figcaption>
+		{% endif %}
     </figure>
 </div>
