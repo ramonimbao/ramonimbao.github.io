@@ -7,7 +7,7 @@ tags = ["Project", "Rust"]
 
 +++
 
-{{ image(src="https://raw.githubusercontent.com/ramonimbao/polypaper-rs/master/output/02.png", description="") }}
+{{ image(src="/images/polypaper/02.jpg", description="") }}
 
 <!-- more -->
 
@@ -23,16 +23,16 @@ The upside to the Rust version is that, I can apply an MSAA filter on the image 
 
 ## Samples
 
-{{ image(src="https://raw.githubusercontent.com/ramonimbao/polypaper-rs/master/output/01.png", description="") }}
-{{ image(src="https://raw.githubusercontent.com/ramonimbao/polypaper-rs/master/output/03.png", description="") }}
-{{ image(src="https://raw.githubusercontent.com/ramonimbao/polypaper-rs/master/output/04.png", description="") }}
-{{ image(src="https://raw.githubusercontent.com/ramonimbao/polypaper-rs/master/output/05.png", description="") }}
-{{ image(src="https://raw.githubusercontent.com/ramonimbao/polypaper-rs/master/output/06.png", description="") }}
-{{ image(src="https://raw.githubusercontent.com/ramonimbao/polypaper-rs/master/output/07.png", description="") }}
-{{ image(src="https://raw.githubusercontent.com/ramonimbao/polypaper-rs/master/output/08.png", description="") }}
-{{ image(src="https://raw.githubusercontent.com/ramonimbao/polypaper-rs/master/output/09.png", description="") }}
-{{ image(src="https://raw.githubusercontent.com/ramonimbao/polypaper-rs/master/output/10.png", description="") }}
-{{ image(src="https://raw.githubusercontent.com/ramonimbao/polypaper-rs/master/output/11.png", description="") }}
+{{ image(src="/images/polypaper/01.jpg", description="") }}
+{{ image(src="/images/polypaper/03.jpg", description="") }}
+{{ image(src="/images/polypaper/04.jpg", description="") }}
+{{ image(src="/images/polypaper/05.jpg", description="") }}
+{{ image(src="/images/polypaper/06.jpg", description="") }}
+{{ image(src="/images/polypaper/07.jpg", description="") }}
+{{ image(src="/images/polypaper/08.jpg", description="") }}
+{{ image(src="/images/polypaper/09.jpg", description="") }}
+{{ image(src="/images/polypaper/10.jpg", description="") }}
+{{ image(src="/images/polypaper/11.jpg", description="") }}
 
 ## Future improvements
 
