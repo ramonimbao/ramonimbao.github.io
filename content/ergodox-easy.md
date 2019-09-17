@@ -35,4 +35,4 @@ There's space for costar stabilizers in the 2u keys. I also opted to not curve t
 
 ## Files
 
-I have printed some sections for testing the ergonomics, but I won't be releasing the keyboard files until I've printed and assembled the whole thing, so stay tuned for that!
+The STL files and source are available for download in [this repository](https://github.com/ramonimbao/dactyl-ez2print), licensed under GNU GPLv3.
