@@ -50,9 +50,9 @@ I tried something new with this design: a top-mount plate. I printed the case in
 
 ## Thoughts
 
-I'm not too fond of the layout. It feels like typing on an ortholinear keyboard but not quite. I regularly hit the next column over because I'm expecting the keys to be aligned vertically on the column. I guess it just takes some practice.
+I'm not too fond of the layout. It feels like typing on an ortholinear keyboard but not quite. I regularly hit the next column over because I'm expecting the keys to be aligned vertically on the column. I guess it just takes some practice. For extra effort in my part, I'm also using this board as a way to practice [Colemak](https://colemak.com/).
 
-For extra effort in my part, I'm also using this board as a way to practice [Colemak](https://colemak.com/).
+This project was also a way for me to test out staining 3D printed wood filament. In the past I used a mix of coffee and glue to stain them which gave meh results. Now, using cherry stain (*hehe*) I think it's... okay. It's rather uneven in some parts and applying more of a stain just makes the other parts darker. I guess it's really how it is since it isn't 100% wood.
 
 ## Files
 
