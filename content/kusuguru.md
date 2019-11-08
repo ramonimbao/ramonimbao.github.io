@@ -67,6 +67,8 @@ Compared to the original Alice and my [first design](/alice-like-keyboard/) my a
 
 JIS layout takes some getting used to. Why JIS layout? Absolutely no reason other than I want one. lol
 
+Why 'Kusuguru'? It's a Japanese-layout TKL keyboard. TKL = tickle = くすぐる.
+
 Endgame? Close, but honestly, maybe not. Only because I've been developing this:
 
 {{ image(src="/images/kusuguru-keyboard/preview.png", description="") }}
