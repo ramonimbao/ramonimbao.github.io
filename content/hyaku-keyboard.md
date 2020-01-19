@@ -23,6 +23,8 @@ I made a full-sized ortholinear keyboard.
 
 This was the first time I incorporated some laser cutting into a keyboard project. It's a nice addition and was super cheap to have made! Previously, I would 3D print pretty much the entire thing and put together with glue and screws. The acrylic bottom gives a nice look at my handwiring, and gives it some extra rigidity despite being only 2mm thick. I just hope this isn't a dust magnet or anything. The whole thing is held together with eight M2×12 screws.
 
+Note the lack of an easy access for the SWD pins. This is because I saw [this STM32F103 bootloader repo](https://github.com/xyzz/stm32f103-keyboard-bootloader) on the MechKeys Discord (thanks!). The README was very easy to understand and implementing it for my own keyboard took no time at all. With this, I can just hold the Escape key and plug the keyboard in to gain access to the bootloader. No more digging out the ST-Link every time I want to change the keymap! I've gone ahead and also implemented this for pretty much every keyboard I have that uses the same micro.
+
 ## Layout
 
 {{ image(src="https://raw.githubusercontent.com/ramonimbao/FullOrthoJIS/master/image/layout.png", description="") }}
