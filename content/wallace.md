@@ -9,13 +9,13 @@ tags = ["3D Printing", "Mechanical Keyboards", "Project"]
 
 Wireless + Alice = Wallace? (alternatively, *Walis* 🧹)
 
-{{ image(src="/images/wallace/glamour.jpg", description="") }}
+{{ image(src="/images/wallace/glamour.", description="") }}
 
 <!-- more -->
 
 ## Description
 
-{{ image(src="/images/wallace/glamour-side.jpg", description="") }}
+{{ image(src="/images/wallace/glamour-side.JPG", description="") }}
 
 Following up on my [Hyaku keyboard](/hyaku-keyboard/), I used the leftover keycaps I had and turned it into an Alice. The cheapo blank PBT keycaps I bought didn't have 1.5u R4 which is why I designed it to be 1.25u instead.
 
@@ -27,7 +27,7 @@ I didn't want to disassemble it anymore because it uses M2 screws to hold the ca
 
 It uses Gateron yellows, and plate-mounted stabilizers.
 
-{{ image(src="/images/wallace/back.jpg", description="") }}
+{{ image(src="/images/wallace/back.JPG", description="") }}
 
 The back could use some work as well. I made mistakes when mounting the on/off switch I used to the case. Also, the red of the case doesn't match the "red" of the keycaps. (It's more of a magenta than red).
 
