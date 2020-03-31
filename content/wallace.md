@@ -9,7 +9,7 @@ tags = ["3D Printing", "Mechanical Keyboards", "Project"]
 
 Wireless + Alice = Wallace? (alternatively, *Walis* 🧹)
 
-{{ image(src="/images/wallace/glamour.", description="") }}
+{{ image(src="/images/wallace/glamour.JPG", description="") }}
 
 <!-- more -->
 
