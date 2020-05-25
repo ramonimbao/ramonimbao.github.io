@@ -24,7 +24,7 @@ taxonomies = [
 even_title = "Ramon Imbao's Blog"
 even_menu = [
     {url = "$BASE_URL", name = "Home"},
-    {url = "$BASE_URL/tags", name = "Tags"},
-    {url = "$BASE_URL/3d", name = "3D"},
-    {url = "$BASE_URL/cv", name = "CV"}
+    {url = "/tags", name = "Tags"},
+    {url = "/3d", name = "3D"},
+    {url = "/cv", name = "CV"}
 ]
