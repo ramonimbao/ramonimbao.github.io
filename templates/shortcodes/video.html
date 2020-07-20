@@ -1,18 +1,18 @@
 <div>
 	<figure>
-	    <video class="lazy" autoplay loop>
-	    	<source src="{{ src }}">
-    	</video>
-	    <noscript>
-	        <video autoplay loop>
-	        	<source src="{{ src }}">
-        	</video>
-	    </noscript>
-    
-    	<figcaption>
+		<video class="lazy" autoplay loop muted>
+			<source src="{{ src }}">
+		</video>
+		<noscript>
+			<video autoplay loop>
+				<source src="{{ src }}">
+			</video>
+		</noscript>
+
+		<figcaption>
 			{% if link %}<a href="{{ link }}">{% endif %}
-        		{{ description }}
-        	{% if link %}</a>{% endif %}
-    	</figcaption>
-    </figure>
+				{{ description }}
+				{% if link %}</a>{% endif %}
+		</figcaption>
+	</figure>
 </div>
