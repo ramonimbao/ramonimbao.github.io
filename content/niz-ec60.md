@@ -9,7 +9,7 @@ tags = ["Mechanical Keyboards", "Project", "Electrocapacitive", "EC"]
 
 {{ image(src="/images/ec60/glamour.jpg", description="") }}
 
-Kindly sponsored by [Niz](https://www.nizkeyboard.com/).
+Kindly provided by [Niz](https://www.nizkeyboard.com/).
 
 <!-- more -->
 
