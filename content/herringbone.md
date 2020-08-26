@@ -181,8 +181,6 @@ I like soldering the corners first to tack the socket down before soldering the 
 
 Next are the 1N4148 diodes, the ones that came in the long tape. These do not have markings but are the ones right beneath the herringbone pattern starting from the left side of the PCB. **Orientation is important!** Match the black mark on the diode with the mark on the PCB. The black mark should be on top for all the 1N4148 diodes.
 
-{{ image(src="/images/herringbone/array.jpg", description="") }}
-
 Do the same technique as seen in the `3.6V ZENER DIODE` section for bending, soldering, and trimming the diodes. Don't forget the diode bending tool! It's up to you if you want to place all of them, then solder and trim, or do it five at a time like I did.
 
 {{ image(src="/images/herringbone/array_5.jpg", description="Five done.") }}
