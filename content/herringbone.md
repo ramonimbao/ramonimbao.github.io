@@ -327,7 +327,7 @@ Install the stabilizers on the main PCB, place your switches into the aluminum p
 
 {{ image(src="/images/herringbone/hp_gap.jpg", description="Note that there's a small gap between the PCB and support layer. The support layer won't sit flush on the PCB.") }}
 
-Install the aluminum cone feet now if you have any. Place the 
+Install the aluminum cone feet now if you have any. Place the bottom layers on top of each other.
 
 {{ image(src="/images/herringbone/hp_feet.jpg", description="") }}
 
