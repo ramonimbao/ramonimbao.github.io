@@ -1,16 +1,18 @@
 <div>
 	<figure>
-	    <img class="lazy" data-src="{{ src }}">
-	    <noscript>
-	        <img src="{{ src }}">
-	    </noscript>
-	
+		<a href="{{ src }}">
+			<img class="lazy" data-src="{{ src }}?s=960">
+			<noscript>
+				<img src="{{ src }}?s=960">
+			</noscript>
+		</a>
+
 		{% if description %}
-    	<figcaption>
+		<figcaption>
 			{% if link %}<a href="{{ link }}">{% endif %}
-        		{{ description }}
-        	{% if link %}</a>{% endif %}
+				{{ description }}
+				{% if link %}</a>{% endif %}
 		</figcaption>
 		{% endif %}
-    </figure>
+	</figure>
 </div>
