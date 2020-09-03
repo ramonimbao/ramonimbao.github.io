@@ -18,9 +18,9 @@ template = "blank.html"
 
 {{ entry(title="Master of Science in Electronics", date="2016—2019" sub="Ateneo de Manila Unversity, Philippines", highlight="Thesis: Determining the state-of-charge and state-of-health of lead-acid batteries in photovoltaic systems", description="Development of an electronic battery testing unit that determines the charge and health of a lead-acid battery without prior history of the battery's charge and discharge cycle.") }}
 
-{{ entry(title="Exchange Student", date="Oct 2017—Mar 2018", sub="Techinical University of Munich, Germany", description="I had undergone an exchange program with the Technical University of Munich in Germany where I took classes related to real-time embedded systems and developed my masters thesis along with a host professor.")}}
+{{ entry(title="Exchange Student", date="Oct 2017—Mar 2018", sub="Technical University of Munich, Germany", description="I had undergone an exchange program with the Technical University of Munich in Germany where I took classes related to real-time embedded systems and developed my masters thesis along with a host professor.")}}
 
-{{ entry(title="Bachelor of Science in Computer Engineering", date="2011—2016", sub="Ateneo de Manila University", highlight="Thesis: Servo-controlled 5-axis 3D printer from an open-source kit", description="Modified an open-soruce 3D printer kit hardware and software to enable it to have two additional rotational axes for support structure-less 3D printing.")}}
+{{ entry(title="Bachelor of Science in Computer Engineering", date="2011—2016", sub="Ateneo de Manila University", highlight="Thesis: Servo-controlled 5-axis 3D printer from an open-source kit", description="Modified an open-source 3D printer kit hardware and software to enable it to have two additional rotational axes for support structure-less 3D printing.")}}
 
 # Publications
 
