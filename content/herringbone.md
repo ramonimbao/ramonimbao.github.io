@@ -7,7 +7,7 @@ tags = ["Mechanical Keyboards", "Project", "Herringbone"]
 
 +++
 
-{{ image(src="/images/herringbone/glamour_hipro.jpg", description="") }}
+{{ bigimage(src="/images/herringbone/glamour_hipro.jpg", description="") }}
 
 {{ image(src="/images/herringbone/glamour_lopro.jpg", description="") }}
 
