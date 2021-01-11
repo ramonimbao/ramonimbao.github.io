@@ -1,0 +1,98 @@
+.star-ratings-css {
+  unicode-bidi: bidi-override;
+  color: #c5c5c5;
+  font-size: 25px;
+  height: 25px;
+  width: 100px;
+  margin: 0 auto;
+  position: relative;
+  padding: 0;
+  text-shadow: 0px 1px 0 #a2a2a2;
+  display: inline-block;
+}
+.star-ratings-css-top {
+  color: #e7711b;
+  padding: 0;
+  position: absolute;
+  z-index: 1;
+  display: block;
+  top: 0;
+  left: 0;
+  overflow: hidden;
+}
+.star-ratings-css-bottom {
+  padding: 0;
+  display: block;
+  z-index: 0;
+}
+
+.rating-table h2 {
+  margin: 0;
+}
+
+main .about .rating-table th, main .about .rating-table td, main .post .rating-table th, main .post .rating-table td {
+  border: 0;
+  box-shadow: none;
+  min-width: 100%;
+}
+
+.rating-table td {
+  padding-bottom: 20px;
+  border: 0;
+  box-shadow: none;
+  min-width: 200px;
+}
+
+.rating-table tr {
+  min-width: 200px;
+}
+
+main .about .rating-table tr:hover {
+  background-color: #fefefe;
+}
+
+#quality-score, #speed-score, #comm-score, #service-score {
+  padding-left: 10px;
+  display: inline-block;
+}
+
+@media 
+only screen and (max-width: 760px),
+(min-device-width: 768px) and (max-device-width: 1024px)  {
+
+	/* Force table to not be like tables anymore */
+	table, thead, tbody, th, td, tr { 
+    display: block; 
+    border: none;
+	}
+	
+	/* Hide table headers (but not display: none;, for accessibility) */
+	thead tr { 
+		position: absolute;
+		top: -9999px;
+    left: -9999px;
+    border: none;
+	}
+	
+	tr {
+    border: none;
+  }
+	
+	td { 
+		/* Behave  like a "row" */
+		border: none;
+		position: relative;
+		padding-left: 50%; 
+	}
+	
+	td:before { 
+		/* Now like a table header */
+		position: absolute;
+		/* Top/left values mimic padding */
+		top: 6px;
+		left: 6px;
+		width: 45%; 
+		padding-right: 10px; 
+		white-space: nowrap;
+  }
+}
