@@ -25,6 +25,5 @@ even_title = "Ramon Imbao's Blog"
 even_menu = [
     {url = "$BASE_URL", name = "Home"},
     {url = "/tags", name = "Tags"},
-    {url = "/3d", name = "3D"},
-    {url = "/cv", name = "CV"}
+    {url = "https://discord.gg/hXcpWvg5zB", name = "Discord"}
 ]
