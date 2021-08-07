@@ -1,6 +1,6 @@
 <div>
 	<figure>
-		<a href="{{ src }}">
+		<a href="{{ src }}" target="_blank">
 			<img class="lazy" data-src="https://imagecdn.app/v2/image/https://rmi-kb.com{{ src }}?width=960">
 			<noscript>
 				<img src="https://imagecdn.app/v2/image/https://rmi-kb.com{{ src }}?width=960">
@@ -9,7 +9,7 @@
 
 		{% if description %}
 		<figcaption>
-			{% if link %}<a href=" {{ link }}">{% endif %}
+			{% if link %}<a href="{{ link }}" target="_blank">{% endif %}
 				{{ description }}
 				{% if link %}</a>{% endif %}
 		</figcaption>
