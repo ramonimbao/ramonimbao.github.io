@@ -9,7 +9,7 @@ tags = ["PCB", "Mechanical Keyboards", "Wireless"]
 
 This is a wireless 60% PCB I made. Featuring the [hineybush h60](https://hineybush.com/collections/july-2021-restock/products/h60-group-buy) outline so it can be drop-in for different keyboards.
 
-{{ bigimage(src="/images/blerry60/screenshot-v2.png", description="") }}
+{{ imgur(id="zh5zcXd") }}
 
 <!-- more -->
 
@@ -17,9 +17,9 @@ This is a wireless 60% PCB I made. Featuring the [hineybush h60](https://hineybu
 
 The entire BLErry series of boards is dedicated to me and my girlfriend's dog [Berry](https://www.instagram.com/berry_theyorkie/).
 
-{{ bigimage(src="/images/blerry60/screenshot.png", description="") }}
+{{ imgur(id="hoU5KGF") }}
 
-{{ bigimage(src="/images/blerry60/berry.jpg", description="") }}
+{{ imgur(id="OzDe2JH") }}
 
 V1 had MX only. The silkscreen for Berry's art came out pretty bad.
 

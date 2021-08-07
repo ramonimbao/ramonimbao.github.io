@@ -9,23 +9,23 @@ tags = ["PCB", "Wireless", "Mechanical Keyboards"]
 
 I made a wireless replacement PCB for the GMMK Pro.
 
-{{ bigimage(src="/images/wireless-gmmk-pro/glamour.jpg", description="") }}
+{{ imgur(id="fiFqplY") }}
 
 <!-- more -->
 
 ## Description
 
-{{ bigimage(src="/images/wireless-gmmk-pro/front.jpg", description="") }}
+{{ imgur(id="DXIHOqd") }}
 
-{{ bigimage(src="/images/wireless-gmmk-pro/side.jpg", description="") }}
+{{ imgur(id="IpmTuYT") }}
 
-{{ bigimage(src="/images/wireless-gmmk-pro/machining.jpg", description="") }}
+{{ imgur(id="RyhJ3H7") }}
 
 I had the bottom machined so there's more space for the battery.
 
-{{ bigimage(src="/images/wireless-gmmk-pro/screenshot.png", description="") }}
+{{ imgur(id="9oaFFkR") }}
 
-{{ bigimage(src="/images/wireless-gmmk-pro/berry.jpg", description="") }}
+{{ imgur(id="wsw0TL0") }}
 
 I nicknamed the PCB `BLErry75`. The silkscreen came out great!
 

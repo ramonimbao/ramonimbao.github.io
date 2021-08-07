@@ -11,19 +11,19 @@ If you take the [SquishyTKL](/squishytkl) and chop off the F-row, you get the Sq
 
 I mean, that's also exactly how I did the PCB layout; I just deleted the F-row and rerouted a few things and I was done!
 
-{{ bigimage(src="/images/squishyfrl/glamour.jpg", description="") }}
+{{ imgur(id="IM05Ryb") }}
 
 <!-- more -->
 
 ## Description
 
-{{ bigimage(src="/images/squishyfrl/closeup.jpg", description="") }}
+{{ imgur(id="kz7Vvmm") }}
 
-{{ bigimage(src="/images/squishyfrl/side.jpg", description="") }}
+{{ imgur(id="AucHhpn") }}
 
-{{ bigimage(src="/images/squishyfrl/bottom.jpg", description="") }}
+{{ imgur(id="pCkx57o") }}
 
-{{ bigimage(src="/images/squishyfrl/bottom_closeup.jpg", description="") }}
+{{ imgur(id="G6t5LLB") }}
 
 Just like with the SquishyTKL, the bottom layer has been replaced with a stainless steel plate, giving the board some heft and rigidity.
 

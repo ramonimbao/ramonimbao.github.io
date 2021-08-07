@@ -9,7 +9,7 @@ tags = ["Polycarbonate", "Mechanical Keyboards", "O-ring"]
 
 This is the more premium version of the [Squishy65](/squishy65) as it's machined out of polycarbonate.
 
-{{ bigimage(src="/images/squishee65/glamour.jpg", description="") }}
+{{ imgur(id="Wqqc8my") }}
 
 <!-- more -->
 
@@ -17,8 +17,8 @@ This is the more premium version of the [Squishy65](/squishy65) as it's machined
 
 You can find a lot more about the keyboard in the [Geekhack IC page](https://geekhack.org/index.php?topic=111401.0).
 
-{{ bigimage(src="/images/squishee65/front.jpg", description="") }}
+{{ imgur(id="t94vvzQ") }}
 
-{{ bigimage(src="/images/squishee65/side.jpg", description="") }}
+{{ imgur(id="4A4y0U6") }}
 
-{{ bigimage(src="/images/squishee65/bottom.jpg", description="Resin weight") }}
+{{ imgur(id="4wsqdNo", description="Resin weight") }}

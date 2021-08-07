@@ -11,21 +11,21 @@ Similar to the [Squishy65](/squishy65), this is a TKL-sized board with gasket mo
 
 What's special about this is that only the 60% section of the TKL is actually gasket mounted.
 
-{{ bigimage(src="/images/squishytkl/glamour.jpg", description="") }}
+{{ imgur(id="hOyVtHu") }}
 
 <!-- more -->
 
 ## Description
 
-{{ bigimage(src="/images/squishytkl/front.jpg", description="") }}
+{{ imgur(id="hOyVtHu") }}
 
-{{ bigimage(src="/images/squishytkl/side.jpg", description="") }}
+{{ imgur(id="QKp8WmP") }}
 
-{{ bigimage(src="/images/squishytkl/scroll.jpg", description="") }}
+{{ imgur(id="H8ze52b") }}
 
 The SquishyTKL supports an encoder on the F13 key, but rather than using EC11, I opted for the [EVQ-WGD001 roller encoders](https://www.aliexpress.com/item/4000424219178.html?spm=2114.12057483.detail.3.6ca1521bki46Kp). They're mounted on a daughterboard of some sort that connects with a JST cable.
 
-{{ bigimage(src="/images/squishytkl/bottom.jpg", description="") }}
+{{ imgur(id="hhqeOGN") }}
 
 The bottom layer has been replaced with a stainless steel plate. The plate I used for this build is also stainless steel. And because of the feet, the whole keyboard is quite hefty despite being 'only' stacked acrylic (2.7kg).
 
