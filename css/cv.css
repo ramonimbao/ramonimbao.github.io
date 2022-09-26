@@ -1,0 +1,34 @@
+h2.entry {
+  margin-bottom: 0;
+}
+
+p.sub {
+  margin-top: 0;
+  font-style: italic;
+}
+
+p.indent {
+  margin-top: 0;
+  margin-bottom: 0;
+  margin-left: 5%;
+}
+
+p.bold {
+  font-weight: bold;
+}
+
+.align-left {
+  float: left;
+}
+
+.align-right {
+  float: right;
+}
+
+.under {
+  clear: both;
+}
+
+.entry {
+  margin-bottom: 5%;
+}

@@ -1,0 +1,516 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta http-equiv="content-type" content="text/html; charset=utf-8">
+
+    <link rel="shortcut icon" type="image/x-icon" href="/images/favicon.png">
+
+    <!-- Enable responsiveness on mobile devices-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+
+    <title>Ramon Imbao&#x27;s Blog</title>
+
+    
+
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slideout/1.0.1/slideout.min.js"></script>
+    
+
+    <script src="/js/yall.min.js"></script>
+    
+
+    
+    <link rel="stylesheet" href="https://rmi-kb.com/site.css">
+    
+    <style type="text/css">
+        video {
+            width: 100%;
+             !important height: auto;
+             !important
+        }
+    </style>
+
+    <link rel="stylesheet" href="/css/rating.css">
+    <link rel="stylesheet" href="/css/cv.css">
+    
+
+    
+    
+</head>
+
+<body>
+    <div class="container">
+
+        <div id="mobile-navbar" class="mobile-navbar">
+            <div class="mobile-header-logo">
+                <a href="/" class="logo">Ramon Imbao&#x27;s Blog</a>
+            </div>
+            <div class="mobile-navbar-icon icon-out">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+
+        <nav id="mobile-menu" class="mobile-menu slideout-menu slideout-menu-left">
+            <ul class="mobile-menu-list">
+                
+                <li class="mobile-menu-item">
+                    <a href="https:&#x2F;&#x2F;rmi-kb.com&#x2F;">
+                        Home
+                    </a>
+                </li>
+                
+                <li class="mobile-menu-item">
+                    <a href="&#x2F;tags">
+                        Tags
+                    </a>
+                </li>
+                
+                <li class="mobile-menu-item">
+                    <a href="https:&#x2F;&#x2F;discord.gg&#x2F;hXcpWvg5zB">
+                        Discord
+                    </a>
+                </li>
+                
+            </ul>
+        </nav>
+
+        <header id="header">
+            <div class="logo"><a href="https:&#x2F;&#x2F;rmi-kb.com&#x2F;">Ramon Imbao&#x27;s Blog</a></div>
+            <nav class="menu">
+                <ul>
+                    
+                    <li>
+                        <a href="https:&#x2F;&#x2F;rmi-kb.com&#x2F;">
+                            Home
+                        </a>
+                    </li>
+                    
+                    <li>
+                        <a href="&#x2F;tags">
+                            Tags
+                        </a>
+                    </li>
+                    
+                    <li>
+                        <a href="https:&#x2F;&#x2F;discord.gg&#x2F;hXcpWvg5zB">
+                            Discord
+                        </a>
+                    </li>
+                    
+                </ul>
+            </nav>
+        </header>
+
+        <main>
+            <div class="content" id="mobile-panel">
+                
+
+
+<div class="post-toc" id="post-toc">
+    <h2 class="post-toc-title">Contents</h2>
+    <div class="post-toc-content always-active">
+        <nav id="TableOfContents">
+            <ul>
+                
+                <li>
+                    <a href="https://rmi-kb.com/niz-ec60/#introduction" class="toc-link">Introduction</a>
+                    
+                </li>
+                
+                <li>
+                    <a href="https://rmi-kb.com/niz-ec60/#the-ec-gh60" class="toc-link">The EC GH60</a>
+                    
+                    <ul>
+                        
+                        <li>
+                            <a href="https://rmi-kb.com/niz-ec60/#the-pcb" class="toc-link">The PCB</a>
+                        </li>
+                        
+                        <li>
+                            <a href="https://rmi-kb.com/niz-ec60/#initial-build-and-assembly" class="toc-link">Initial build and assembly</a>
+                        </li>
+                        
+                        <li>
+                            <a href="https://rmi-kb.com/niz-ec60/#the-results" class="toc-link">The results</a>
+                        </li>
+                        
+                    </ul>
+                    
+                </li>
+                
+                <li>
+                    <a href="https://rmi-kb.com/niz-ec60/#remarks" class="toc-link">Remarks</a>
+                    
+                </li>
+                
+            </ul>
+        </nav>
+    </div>
+</div>
+
+
+<article class="post">
+    
+    <header class="post__header">
+        <h1 class="post__title">
+            <a href="https:&#x2F;&#x2F;rmi-kb.com&#x2F;niz-ec60&#x2F;">60% Electrocapacitive (EC) Keyboard</a>
+        </h1>
+        <div class="post__meta">
+            <span class="post__time">2020-07-20</span>
+            
+        </div>
+    </header>
+
+    <div class="post-content">
+        <div>
+	<figure>
+		<a href="&#x2F;images&#x2F;ec60&#x2F;glamour.jpg" target="_blank">
+			<img class="lazy" data-src="&#x2F;images&#x2F;ec60&#x2F;glamour.jpg">
+			<noscript>
+				<img src="&#x2F;images&#x2F;ec60&#x2F;glamour.jpg">
+			</noscript>
+		</a>
+
+		
+	</figure>
+</div>
+<p>Kindly provided by <a href="https://www.nizkeyboard.com/">Niz</a>.</p>
+<span id="continue-reading"></span><h2 id="introduction">Introduction</h2>
+<p>After reading a <a href="https://github.com/tomsmalley/custom-topre-guide">Github repository</a> about designing your own Topre keyboard a while ago, designing one has been on my to-do list. My months of on-off google searching tells me that the only way for you to source the springs is to get one from a donor Topre board. I didn't think that was sustainable and that put me off designing one. The <a href="https://www.nizkeyboard.com/products/2019-new-niz-ec-switch">sliders, housings</a>, and <a href="https://www.nizkeyboard.com/products/ec-silicone-domes-35g-45g-55g">rubber domes</a> can be bought from Niz, so the springs were really the missing component.</p>
+<p>After a long while of forgetting about the whole thing and re-reading the repo again, I came across <a href="https://www.mouser.com/ProductDetail/534-240">AA battery spring</a> that could potentially work. I did a quick google search for Topre spring dimensions and came across <a href="https://www.reddit.com/r/MechanicalKeyboards/comments/3sz4fj/help_what_are_the_specs_on_a_topre_spring/?utm_source=share&amp;utm_medium=web2x">this reddit thread</a>. It wasn't the exact dimensions, but it's small enough that it could fit.</p>
+<div>
+	<figure>
+		<a href="&#x2F;images&#x2F;ec60&#x2F;aa-springs.png" target="_blank">
+			<img class="lazy" data-src="&#x2F;images&#x2F;ec60&#x2F;aa-springs.png">
+			<noscript>
+				<img src="&#x2F;images&#x2F;ec60&#x2F;aa-springs.png">
+			</noscript>
+		</a>
+
+		
+		<figcaption>
+			
+				The dimensions of the AA battery springs I wanted to use. Image from the datasheet.
+				
+		</figcaption>
+		
+	</figure>
+</div>
+<p>At just $6.30 for 100 pieces already, this seems like a nice sustainable source of conical springs that, if it worked, then would mean cheap EC keyboards.</p>
+<p>I went and designed an EC keyboard that I thought would be special: an Alice layout EC keyboard.</p>
+<div>
+	<figure>
+		<a href="&#x2F;images&#x2F;ec60&#x2F;front-ec-alice.png" target="_blank">
+			<img class="lazy" data-src="&#x2F;images&#x2F;ec60&#x2F;front-ec-alice.png">
+			<noscript>
+				<img src="&#x2F;images&#x2F;ec60&#x2F;front-ec-alice.png">
+			</noscript>
+		</a>
+
+		
+	</figure>
+</div>
+<div>
+	<figure>
+		<a href="&#x2F;images&#x2F;ec60&#x2F;back-ec-alice.png" target="_blank">
+			<img class="lazy" data-src="&#x2F;images&#x2F;ec60&#x2F;back-ec-alice.png">
+			<noscript>
+				<img src="&#x2F;images&#x2F;ec60&#x2F;back-ec-alice.png">
+			</noscript>
+		</a>
+
+		
+	</figure>
+</div>
+<p>Someone suggested I contact Niz to see if I they're willing to provide springs for the project, so I gave them an email with the images linked above and my intent. After some back and forth emails where they asked me about past projects I've done and me showing my blog (hehe), they asked if I can do a 60% keyboard similar to the <a href="https://github.com/komar007/gh60">GH60</a>. I said, sure and after 24 hours, I had a new PCB layout made.</p>
+<h2 id="the-ec-gh60">The EC GH60</h2>
+<h3 id="the-pcb">The PCB</h3>
+<div>
+	<figure>
+		<a href="&#x2F;images&#x2F;ec60&#x2F;front-ec60.png" target="_blank">
+			<img class="lazy" data-src="&#x2F;images&#x2F;ec60&#x2F;front-ec60.png">
+			<noscript>
+				<img src="&#x2F;images&#x2F;ec60&#x2F;front-ec60.png">
+			</noscript>
+		</a>
+
+		
+	</figure>
+</div>
+<div>
+	<figure>
+		<a href="&#x2F;images&#x2F;ec60&#x2F;back-ec60.png" target="_blank">
+			<img class="lazy" data-src="&#x2F;images&#x2F;ec60&#x2F;back-ec60.png">
+			<noscript>
+				<img src="&#x2F;images&#x2F;ec60&#x2F;back-ec60.png">
+			</noscript>
+		</a>
+
+		
+	</figure>
+</div>
+<p>I basically just followed the custom Topre guide I linked above exactly. I went with the same parts, too. I basically trusted that all the info on the guide worked. I mean, of course it made sense when I was reading it, but I had no idea if it was really going to work, especially the PCB layout I made.</p>
+<p>The PCB (as well as the EC Alice) is a 4-layer board. The guide states that 2-layer can work but I wanted the best chances for the PCB to work, so I opted for 4 layers. It was quite a nice experience routing things though. No more long power traces – just plop a via down and you're done! Well, I'm not sure about best practice but I did watch a few YouTube videos about PCB RF layout. I'm basically a pro. 😎 (lmao no)</p>
+<div>
+	<figure>
+		<a href="&#x2F;images&#x2F;ec60&#x2F;layout.png" target="_blank">
+			<img class="lazy" data-src="&#x2F;images&#x2F;ec60&#x2F;layout.png">
+			<noscript>
+				<img src="&#x2F;images&#x2F;ec60&#x2F;layout.png">
+			</noscript>
+		</a>
+
+		
+	</figure>
+</div>
+<p>I decided on supporting split backspace, split right shift, and standard/Tsangan bottom row for the key layout. Supporting ISO is an ugly mess even on MX boards so I decided not to. Every position that has overlapping keys basically has their own custom footprints. I think it's six total custom ones apart from the required ones like 1U, 1.5U, etc.</p>
+<div>
+	<figure>
+		<a href="&#x2F;images&#x2F;ec60&#x2F;pad.png" target="_blank">
+			<img class="lazy" data-src="&#x2F;images&#x2F;ec60&#x2F;pad.png">
+			<noscript>
+				<img src="&#x2F;images&#x2F;ec60&#x2F;pad.png">
+			</noscript>
+		</a>
+
+		
+	</figure>
+</div>
+<p>The shape of the pads were made in Fusion 360, and exported as a DXF file. I imported those into Inkscape and exported them as PNG files with crazy resolutions (1000×1000++) for an 18mm × 18mm footprint. I still kept the solder pad for the Keystone AA battery spring instead of just straight up going with Niz springs because I was too lazy to edit my footpritns.</p>
+<p>After I had shown Lam (my contact at Niz) the PCB and iterating and re-iterating that I was totally not sure that this was even going to work. They agreed to sponsor the project. They would send over two PCBs and enough parts to build one.</p>
+<h3 id="initial-build-and-assembly">Initial build and assembly</h3>
+<div>
+	<figure>
+		<a href="&#x2F;images&#x2F;ec60&#x2F;parts.jpg" target="_blank">
+			<img class="lazy" data-src="&#x2F;images&#x2F;ec60&#x2F;parts.jpg">
+			<noscript>
+				<img src="&#x2F;images&#x2F;ec60&#x2F;parts.jpg">
+			</noscript>
+		</a>
+
+		
+	</figure>
+</div>
+<p>The parts arrived after a week of delay from FedEx. (I mean, we <em>are</em> still under lockdown) They all came in an elegant, minimalist-looking black box. Included were the sliders, housings, conical springs, two rubber domes (for a 65% though), a custom plate, the two PCBs, and a clear 60% case.</p>
+<p>The PCBs were ordered from JLCPCB, so everything but the USB connector was populated. That was the first thing I soldered. Not sure if my iron needs a new tip or because of the 4-layer board but it seemed more difficult than usual, even with flux. I thought I'd been able to solder the mounting legs, but then turns out it was a cold solder joint. I managed to do it anyway. Good thing I didn't wreck any PCBs. Would've felt really bad, man.</p>
+<div>
+	<figure>
+		<a href="&#x2F;images&#x2F;ec60&#x2F;usb-soldered.jpg" target="_blank">
+			<img class="lazy" data-src="&#x2F;images&#x2F;ec60&#x2F;usb-soldered.jpg">
+			<noscript>
+				<img src="&#x2F;images&#x2F;ec60&#x2F;usb-soldered.jpg">
+			</noscript>
+		</a>
+
+		
+	</figure>
+</div>
+<p>Because the USB connector overlaps slightly with the EC pad, I placed some kapton tape on the mounting pads where the springs would sit just to prevent the spring shorting to ground. The spring might not be able to couple with the capacitance made by the pads.</p>
+<div>
+	<figure>
+		<a href="&#x2F;images&#x2F;ec60&#x2F;custom-plate.jpg" target="_blank">
+			<img class="lazy" data-src="&#x2F;images&#x2F;ec60&#x2F;custom-plate.jpg">
+			<noscript>
+				<img src="&#x2F;images&#x2F;ec60&#x2F;custom-plate.jpg">
+			</noscript>
+		</a>
+
+		
+	</figure>
+</div>
+<p>The guide doesn't mention it, but I've seen it in some teardown photos of Niz EC PCBs, but there seems to be holes for mounting the PCB to the plate. I wasn't sure where to add them, so I added them in both the PCB and the custom plate seen above. See all the tiny holes in between switches? Definitely overkill. Niz should make a proper 60% rubber dome for this project and then I'll match that on the PCB and plate instead.</p>
+<div>
+	<figure>
+		<a href="&#x2F;images&#x2F;ec60&#x2F;housing-test-fit.jpg" target="_blank">
+			<img class="lazy" data-src="&#x2F;images&#x2F;ec60&#x2F;housing-test-fit.jpg">
+			<noscript>
+				<img src="&#x2F;images&#x2F;ec60&#x2F;housing-test-fit.jpg">
+			</noscript>
+		</a>
+
+		
+	</figure>
+</div>
+<p>Here, I'm testing the fit of the housings on the plate, but of course the domes don't fit since they sent over a 65% rubber dome sheet.</p>
+<div>
+	<figure>
+		<a href="&#x2F;images&#x2F;ec60&#x2F;domes-no-fit.jpg" target="_blank">
+			<img class="lazy" data-src="&#x2F;images&#x2F;ec60&#x2F;domes-no-fit.jpg">
+			<noscript>
+				<img src="&#x2F;images&#x2F;ec60&#x2F;domes-no-fit.jpg">
+			</noscript>
+		</a>
+
+		
+	</figure>
+</div>
+<p>I test fitted it in the case as well and found that the padding around the domes would not let it fit in the case, so I had to trim those too.</p>
+<div>
+	<figure>
+		<a href="&#x2F;images&#x2F;ec60&#x2F;domes-trimmed.jpg" target="_blank">
+			<img class="lazy" data-src="&#x2F;images&#x2F;ec60&#x2F;domes-trimmed.jpg">
+			<noscript>
+				<img src="&#x2F;images&#x2F;ec60&#x2F;domes-trimmed.jpg">
+			</noscript>
+		</a>
+
+		
+	</figure>
+</div>
+<div>
+	<figure>
+		<a href="&#x2F;images&#x2F;ec60&#x2F;domes-cut.jpg" target="_blank">
+			<img class="lazy" data-src="&#x2F;images&#x2F;ec60&#x2F;domes-cut.jpg">
+			<noscript>
+				<img src="&#x2F;images&#x2F;ec60&#x2F;domes-cut.jpg">
+			</noscript>
+		</a>
+
+		
+	</figure>
+</div>
+<p>Here's when I really started trimming the domes. I had to separate sections from the whole sheet so they can fit, and I had to cut out sections for the stabilizer holes. Niz uses costar stabilizers for their keyboards, but I am using MX-style stabilizers for mine. I kept doing test fits every step of the way and this is when I encountered a problem with the housing: it would collide with the MX stabilizers. I don't think it would also work with plate-mount MX stabilizers so maybe that's why Niz opted for costar?</p>
+<div>
+	<figure>
+		<a href="&#x2F;images&#x2F;ec60&#x2F;housing-trim.jpg" target="_blank">
+			<img class="lazy" data-src="&#x2F;images&#x2F;ec60&#x2F;housing-trim.jpg">
+			<noscript>
+				<img src="&#x2F;images&#x2F;ec60&#x2F;housing-trim.jpg">
+			</noscript>
+		</a>
+
+		
+	</figure>
+</div>
+<p>I trimmed off the front parts of the housing (highlighted in red above) so the stabilizer can fit between the housings when mounted.</p>
+<div>
+	<figure>
+		<a href="&#x2F;images&#x2F;ec60&#x2F;assembly-done.jpg" target="_blank">
+			<img class="lazy" data-src="&#x2F;images&#x2F;ec60&#x2F;assembly-done.jpg">
+			<noscript>
+				<img src="&#x2F;images&#x2F;ec60&#x2F;assembly-done.jpg">
+			</noscript>
+		</a>
+
+		
+	</figure>
+</div>
+<p>After that, it was all smooth sailing. It takes a while to put the springs on the domes (especially since they're not a single sheet), and I had to use some relatively long M2×10 bolts to secure the case. It's even held together by just a nut underneath the PCB. I have to rethink the design to make it nicer to secure.</p>
+<h3 id="the-results">The results</h3>
+<p>I wrote some experimental code while designing the EC Alice keyboard. I just adapted it for the EC GH60 keyboard. Of course, it didn't work the first time. It never works the first time! Long story short, after some head scratching, review, and a bit of chatting with people on Discord about it, I got it to work a bit!</p>
+<div>
+	<figure>
+		<video class="lazy" autoplay loop muted>
+			<source src="&#x2F;images&#x2F;ec60&#x2F;button-press.mp4">
+		</video>
+		<noscript>
+			<video autoplay loop>
+				<source src="&#x2F;images&#x2F;ec60&#x2F;button-press.mp4">
+			</video>
+		</noscript>
+
+		<figcaption>
+			
+				Excuse the crappy phone video. I got so excited I just wanted to record it immediately.
+				
+		</figcaption>
+	</figure>
+</div>
+<p>It's still very much not working as intended. The ADC only measures 50 when not pressed and 90 when pressed (when it should be ranged 0-1023). I might need to change the values for the op-amp. The guide sets it to around 200. I ordered some 0603 parts to play around with some values and see if I can improve it. If I can improve it, I'll ask Niz if I can get another prototype PCB, but hopefully this will be the final one.</p>
+<div>
+	<figure>
+		<a href="&#x2F;images&#x2F;ec60&#x2F;keypresses.png" target="_blank">
+			<img class="lazy" data-src="&#x2F;images&#x2F;ec60&#x2F;keypresses.png">
+			<noscript>
+				<img src="&#x2F;images&#x2F;ec60&#x2F;keypresses.png">
+			</noscript>
+		</a>
+
+		
+	</figure>
+</div>
+<p>After getting one button working, I got it working for one column. I refactored the code a bit more to make it generic and all I'll change is the <code>config.h</code> file. But afterwards, I got it to work for 4 columns. When I do all 14 columns, it doesn't register keypresses anymore, so I guess I'll wait for my new parts to arrive before I try again.</p>
+<h2 id="remarks">Remarks</h2>
+<p>This is the blog post 1/N about this keyboard. I'll be posting more regarding this keyboard project in the future once I've made progress, but this is looking really good!</p>
+
+    </div>
+
+    
+    
+
+    <div class="post-footer">
+        
+        
+        <div class="post-tags">
+            
+            <a href="https://rmi-kb.com/tags/mechanical-keyboards/">#Mechanical Keyboards</a>
+            
+            <a href="https://rmi-kb.com/tags/project/">#Project</a>
+            
+            <a href="https://rmi-kb.com/tags/electrocapacitive/">#Electrocapacitive</a>
+            
+            <a href="https://rmi-kb.com/tags/ec/">#EC</a>
+            
+        </div>
+        
+        
+        <div class="post-nav">
+            
+            <a class="previous" href="https:&#x2F;&#x2F;rmi-kb.com&#x2F;wete&#x2F;">‹ Full-sized Southpaw &#x27;Wete&#x27; Keyboard</a>
+            
+            
+            <a class="next" href="https:&#x2F;&#x2F;rmi-kb.com&#x2F;herringbone&#x2F;">Through-hole 75% Keyboard &#x27;Herringbone&#x27; ›</a>
+            
+            
+            
+        </div>
+        
+
+        
+
+    </div>
+
+    <!-- Disqus -->
+    <!--
+    <div id='disqus_thread'></div>
+    <script>
+        (function () {
+            var d = document, s = d.createElement('script');
+            s.src = 'https://ramonimbao.disqus.com/embed.js';
+            s.setAttribute('data-timestamp', +new Date());
+            (d.head || d.body).appendChild(s);
+        })();
+    </script>
+    <noscript>Please enable JavaScript to view the <a href='https://disqus.com/?ref_noscript' rel='nofollow'>comments
+            powered by Disqus.</a></noscript>
+        -->
+
+    
+    
+</article>
+
+
+            </div>
+        </main>
+
+        
+        
+    </div>
+
+      
+          <script>
+            document.addEventListener("DOMContentLoaded", function() {
+                yall({
+                    observeChanges: true
+                });
+            });
+          </script>
+          <script type="text/javascript" src="https://rmi-kb.com/even.js" ></script>
+      
+    </body>
+
+</html>

@@ -1,0 +1,472 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta http-equiv="content-type" content="text/html; charset=utf-8">
+
+    <link rel="shortcut icon" type="image/x-icon" href="/images/favicon.png">
+
+    <!-- Enable responsiveness on mobile devices-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+
+    <title>Ramon Imbao&#x27;s Blog</title>
+
+    
+
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slideout/1.0.1/slideout.min.js"></script>
+    
+
+    <script src="/js/yall.min.js"></script>
+    
+
+    
+    <link rel="stylesheet" href="https://rmi-kb.com/site.css">
+    
+    <style type="text/css">
+        video {
+            width: 100%;
+             !important height: auto;
+             !important
+        }
+    </style>
+
+    <link rel="stylesheet" href="/css/rating.css">
+    <link rel="stylesheet" href="/css/cv.css">
+    
+
+    
+    
+</head>
+
+<body>
+    <div class="container">
+
+        <div id="mobile-navbar" class="mobile-navbar">
+            <div class="mobile-header-logo">
+                <a href="/" class="logo">Ramon Imbao&#x27;s Blog</a>
+            </div>
+            <div class="mobile-navbar-icon icon-out">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+
+        <nav id="mobile-menu" class="mobile-menu slideout-menu slideout-menu-left">
+            <ul class="mobile-menu-list">
+                
+                <li class="mobile-menu-item">
+                    <a href="https:&#x2F;&#x2F;rmi-kb.com&#x2F;">
+                        Home
+                    </a>
+                </li>
+                
+                <li class="mobile-menu-item">
+                    <a href="&#x2F;tags">
+                        Tags
+                    </a>
+                </li>
+                
+                <li class="mobile-menu-item">
+                    <a href="https:&#x2F;&#x2F;discord.gg&#x2F;hXcpWvg5zB">
+                        Discord
+                    </a>
+                </li>
+                
+            </ul>
+        </nav>
+
+        <header id="header">
+            <div class="logo"><a href="https:&#x2F;&#x2F;rmi-kb.com&#x2F;">Ramon Imbao&#x27;s Blog</a></div>
+            <nav class="menu">
+                <ul>
+                    
+                    <li>
+                        <a href="https:&#x2F;&#x2F;rmi-kb.com&#x2F;">
+                            Home
+                        </a>
+                    </li>
+                    
+                    <li>
+                        <a href="&#x2F;tags">
+                            Tags
+                        </a>
+                    </li>
+                    
+                    <li>
+                        <a href="https:&#x2F;&#x2F;discord.gg&#x2F;hXcpWvg5zB">
+                            Discord
+                        </a>
+                    </li>
+                    
+                </ul>
+            </nav>
+        </header>
+
+        <main>
+            <div class="content" id="mobile-panel">
+                
+
+
+<div class="post-toc" id="post-toc">
+    <h2 class="post-toc-title">Contents</h2>
+    <div class="post-toc-content always-active">
+        <nav id="TableOfContents">
+            <ul>
+                
+                <li>
+                    <a href="https://rmi-kb.com/stm32l4-rust-blink/#toolchain-installation" class="toc-link">Toolchain Installation</a>
+                    
+                </li>
+                
+                <li>
+                    <a href="https://rmi-kb.com/stm32l4-rust-blink/#creating-a-project" class="toc-link">Creating a project</a>
+                    
+                </li>
+                
+                <li>
+                    <a href="https://rmi-kb.com/stm32l4-rust-blink/#getting-blink-to-work" class="toc-link">Getting blink to work</a>
+                    
+                    <ul>
+                        
+                        <li>
+                            <a href="https://rmi-kb.com/stm32l4-rust-blink/#importing-what-we-need" class="toc-link">Importing what we need</a>
+                        </li>
+                        
+                        <li>
+                            <a href="https://rmi-kb.com/stm32l4-rust-blink/#peripheral-access" class="toc-link">Peripheral access</a>
+                        </li>
+                        
+                        <li>
+                            <a href="https://rmi-kb.com/stm32l4-rust-blink/#set-up-clocks" class="toc-link">Set up clocks</a>
+                        </li>
+                        
+                        <li>
+                            <a href="https://rmi-kb.com/stm32l4-rust-blink/#set-up-gpio" class="toc-link">Set up GPIO</a>
+                        </li>
+                        
+                        <li>
+                            <a href="https://rmi-kb.com/stm32l4-rust-blink/#blink" class="toc-link">Blink!</a>
+                        </li>
+                        
+                        <li>
+                            <a href="https://rmi-kb.com/stm32l4-rust-blink/#cloning-and-applying-the-fix" class="toc-link">Cloning and applying the fix</a>
+                        </li>
+                        
+                        <li>
+                            <a href="https://rmi-kb.com/stm32l4-rust-blink/#running-on-the-discovery-board" class="toc-link">Running on the discovery board</a>
+                        </li>
+                        
+                    </ul>
+                    
+                </li>
+                
+                <li>
+                    <a href="https://rmi-kb.com/stm32l4-rust-blink/#github-repository" class="toc-link">GitHub repository</a>
+                    
+                </li>
+                
+            </ul>
+        </nav>
+    </div>
+</div>
+
+
+<article class="post">
+    
+    <header class="post__header">
+        <h1 class="post__title">
+            <a href="https:&#x2F;&#x2F;rmi-kb.com&#x2F;stm32l4-rust-blink&#x2F;">Embedded Rust Experiments Part 1 — Blink!</a>
+        </h1>
+        <div class="post__meta">
+            <span class="post__time">2019-02-23</span>
+            
+        </div>
+    </header>
+
+    <div class="post-content">
+        <p>I've been learning the <a href="https://www.rust-lang.org/">Rust programming language</a> for a while now, and while it's been fun implementing <a href="https://github.com/ramonimbao/game_of_life">Conway's Game of Life</a> or a <a href="https://github.com/ramonimbao/rt1w">Raytracer in one weekend</a>), I wanted to give embedded Rust a try. I have several development boards lying around, and I want to try using Rust on one of them. I'll be using an <a href="https://www.st.com/en/evaluation-tools/32l476gdiscovery.html">STM32L476 Discovery board</a> only because of its boatload of peripherals available on the board.</p>
+<p>This is by no means a tutorial; I just want to document all the things I've done regarding my experimentation with it. Eventually I'd like to implement a board support package crate for the discovery board I'm using.</p>
+<span id="continue-reading"></span>
+<p><strong>2019-03-09 UPDATE:</strong> Apparently, this doesn't compile as-is and I modified my local libraries as a test but forgot to note that it wouldn't work without the modifications, so I'm adding extra steps to rectify the problems.</p>
+<hr />
+<h2 id="toolchain-installation">Toolchain Installation</h2>
+<p>Firstly, with Rust 1.32 stable installed, following the <a href="https://rust-embedded.github.io/book/intro/index.html">Embedded Rust book tutorial</a>, I installed <code>cargo-generate</code> with <code>cargo install cargo-generate</code>.</p>
+<p>I also installed several Rust targets using:</p>
+<pre data-lang="bash" class="language-bash "><code class="language-bash" data-lang="bash">rustup target add thumbv6m-none-eabi thumbv7m-none-eabi thumbv7em-none-eabi thumbv7em-none-eabihf
+</code></pre>
+<p>I also installed the <a href="https://developer.arm.com/open-source/gnu-toolchain/gnu-rm/downloads">ARM GNU Toolchain</a> for debugging with <code>arm-none-eabi-gdb</code>, as well as <a href="http://gnutoolchains.com/arm-eabi/openocd/">OpenOCD</a>. The link points to Windows binaries since I'm using Windows for development.</p>
+<hr />
+<h2 id="creating-a-project">Creating a project</h2>
+<p>I created a new project by running:</p>
+<pre data-lang="bash" class="language-bash "><code class="language-bash" data-lang="bash">cargo generate --git https://github.com/rust-embedded/cortex-m-quickstart
+</code></pre>
+<p>It asked for a project name. For starters, I gave it a name <code>l4-blink</code>.</p>
+<p>Because the STM32L4 Discovery board has an <a href="https://www.st.com/en/microcontrollers/stm32f746ng.html">STM32L476VG</a> in it (which is an ARM Cortex-M4 with FPU), I modified the <code>.cargo/config</code> file to change the build target from <code>thumbv7m-none-eabi</code> to <code>thumbv7em-non-eabihf</code>. I also modified the <code>target</code> section and uncommented the <code>runner = &quot;arm-none-eabi-gdb -q -x openocd.gdb</code>.</p>
+<p>Now I modify the <code>memory.x</code> file so that the memory mam is as follows:</p>
+<pre><code>MEMORY {
+    /* NOTE 1 K = 1 KiBi = 1024 bytes */
+    FLASH : ORIGIN = 0x08000000, LENGTH = 1024K
+    RAM : ORIGIN = 0x20000000, LENGTH = 96K
+}
+</code></pre>
+<p>There's also another 32K of RAM available at <code>0x10000000</code> which has additional features like parity-checking, but I don't know how to implement that into the file.</p>
+<p>Finally, I add the <code>stm32l4</code> and <code>stm32l4xx-hal</code> crates to the <code>Cargo.toml</code> file like so:</p>
+<pre><code>[dependencies.stm32l4]
+version = "0.6"
+features = ["stm32l4x6", "rt"]
+
+[dependencies.stm32l4xx-hal]
+version = "0.6"
+features = ["stm32l4x6", "rt"]
+</code></pre>
+<hr />
+<h2 id="getting-blink-to-work">Getting blink to work</h2>
+<h3 id="importing-what-we-need">Importing what we need</h3>
+<pre data-lang="rust" class="language-rust "><code class="language-rust" data-lang="rust">use cortex_m_rt::entry;
+use stm32l4xx_hal::delay::Delay;
+use stm32l4xx_hal::prelude::*;
+</code></pre>
+<h3 id="peripheral-access">Peripheral access</h3>
+<p>Let's get access to the peripherals by <code>take()</code>-ing them. We need access to the RCC and the FLASH for setting the clocks later.</p>
+<pre data-lang="rust" class="language-rust "><code class="language-rust" data-lang="rust">let cp = cortex_m::Peripherals::take().unwrap();
+let dp = stm32l4xx_hal::stm32::Peripherals::take().unwrap();
+
+let mut flash = dp.FLASH.constrain();
+let mut rcc = dp.RCC.constrain();
+</code></pre>
+<h3 id="set-up-clocks">Set up clocks</h3>
+<p>Here, we set the clock with its reset values. Based on the reference manual, the system clock is set to use the MSI, configured at 4 MHz. (RM0351 §6.2)</p>
+<p>We also need access to GPIOB and GPIOE since that's where the LEDs are connected to. The red LED is connected to PB2, and the green LED is connected to PE8. (UM1879 §10.5)</p>
+<p>For the <code>split()</code> function, <code>ahb2</code> is passed since all the GPIO clocks are connected to the AHB2 bus. (RM0351 §2.2.2, Table 1)</p>
+<pre data-lang="rust" class="language-rust "><code class="language-rust" data-lang="rust">let clocks = rcc.cfgr.freeze(&mut flash.acr);
+let mut gpiob = dp.GPIOB.split(&mut rcc.ahb2);
+let mut gpioe = dp.GPIOE.split(&mut rcc.ahb2);
+</code></pre>
+<h3 id="set-up-gpio">Set up GPIO</h3>
+<p>Here, we're simply setting the GPIO mode for the LEDs as push-pull outputs.</p>
+<pre data-lang="rust" class="language-rust "><code class="language-rust" data-lang="rust">let mut red_led = gpiob
+    .pb2
+    .into_push_pull_output(&mut gpio.moder, &mut gpiob.otyper);
+let mut green_led = gpioe
+    .pe8
+    .into_push_pull_output(&mut gpioe.moder, &mut gpioe.otyper);
+</code></pre>
+<h3 id="blink">Blink!</h3>
+<p>Finally, we get to blinking. The <code>stm32l4xx-hal</code> crate provides a nice API for blinking:</p>
+<pre data-lang="rust" class="language-rust "><code class="language-rust" data-lang="rust">let mut timer = Delay::new(cp.SYST, clocks);
+loop {
+    red_led.set_high();
+    green_led.set_low();
+    timer.delay_ms(500_u32);
+    red_led.set_low();
+    green_led.set_high();
+    timer.delay_ms(500_u32);
+}
+</code></pre>
+<p>Alright! That's all the code. Let's go compile it by running <code>cargo build</code>.</p>
+<pre><code>error[E0412]: cannot find type `CRRCR` in module `rcc`
+   --> C:\Users\ramonimbao\.cargo\registry\src\github.com-1ecc6299db9ec823\stm32l4xx-hal-0.3.6\src\rcc.rs:118:45
+    |
+118 |     pub(crate) fn crrcr(&mut self) -> &rcc::CRRCR {
+    |                                             ^^^^^ not found in `rcc`
+help: possible candidate is found in another module, you can import it into scope
+    |
+3   | use crate::rcc::CRRCR;
+    |
+
+error[E0609]: no field `crrcr` on type `stm32l4::stm32l4x6::rcc::RegisterBlock`
+   --> C:\Users\ramonimbao\.cargo\registry\src\github.com-1ecc6299db9ec823\stm32l4xx-hal-0.3.6\src\rcc.rs:120:33
+    |
+120 |         unsafe { &(*RCC::ptr()).crrcr }
+    |                                 ^^^^^ unknown field
+    |
+    = note: available fields are: `cr`, `icscr`, `cfgr`, `pllcfgr`, `pllsai1cfgr` ... and 25 others
+
+error[E0609]: no field `crrcr` on type `&stm32l4::stm32l4x6::rcc::RegisterBlock`
+   --> C:\Users\ramonimbao\.cargo\registry\src\github.com-1ecc6299db9ec823\stm32l4xx-hal-0.3.6\src\rcc.rs:507:21
+    |
+507 |                 rcc.crrcr.modify(|_, w| w.hsi48on().set_bit());
+    |                     ^^^^^
+
+error[E0609]: no field `crrcr` on type `&stm32l4::stm32l4x6::rcc::RegisterBlock`
+   --> C:\Users\ramonimbao\.cargo\registry\src\github.com-1ecc6299db9ec823\stm32l4xx-hal-0.3.6\src\rcc.rs:509:27
+    |
+509 |                 while rcc.crrcr.read().hsi48rdy().bit_is_clear() {}
+    |                           ^^^^^
+
+error: aborting due to 4 previous errors
+
+Some errors occurred: E0412, E0609.
+For more information about an error, try `rustc --explain E0412`.
+error: Could not compile `stm32l4xx-hal`.
+
+To learn more, run the command again with --verbose.
+</code></pre>
+<p>Oh no. What are these errors? Apparently, <code>CRRCR</code> can't be found. The problem for us is that it's trying to access <code>CRRCR</code> though it's missing. According to §6.4.31 of the reference manual, the register is present only on L496/L4A6 devices. There has been an <a href="https://github.com/stm32-rs/stm32l4xx-hal/issues/32">issue filed</a> regarding this, but the issue is still open. So until it gets fixed, let's go ahead and clone the <code>stm32l4xx-hal</code> repository and &quot;fix&quot; the problem.</p>
+<h3 id="cloning-and-applying-the-fix">Cloning and applying the fix</h3>
+<p>Let's <code>git clone</code> the crate to the same folder we have our <code>l4-blink</code> project. Now in <code>Cargo.toml</code> of our <code>l4-blink</code> project, I'll modify the <code>stm32l4xx-hal</code> dependency to the following:</p>
+<pre data-lang="toml" class="language-toml "><code class="language-toml" data-lang="toml">[dependencies.stm32l4xx-hal]
+version = "0.3"
+path = "../stm32l4xx-hal"
+features = ["stm32l4x6", "rt"]
+</code></pre>
+<p>Now since the <code>CRRCR</code> register isn't present on the STM32L476 device that's on the Discovery board, let's just go ahead and comment out all occurrences of <code>crrcr</code> in the <code>src/rcc.rs</code> file.</p>
+<p>As of commit <code>31f7100</code>, the following changes were made:</p>
+<pre data-lang="diff" class="language-diff "><code class="language-diff" data-lang="diff">diff --git a/src/rcc.rs b/src/rcc.rs
+index 91b179e..f774474 100644
+--- a/src/rcc.rs
++++ b/src/rcc.rs
+@@ -54,7 +54,7 @@ impl RccExt for RCC {
+             apb2: APB2 { _0: () },
+             bdcr: BDCR { _0: () },
+             csr: CSR { _0: () },
+-            crrcr: CRRCR { _0: () },
++            //crrcr: CRRCR { _0: () },
+             cfgr: CFGR {
+                 hclk: None,
+                 hsi48: false,
+@@ -89,8 +89,8 @@ pub struct Rcc {
+     pub bdcr: BDCR,
+     /// Control/Status Register
+     pub csr: CSR,
+-    /// Clock recovery RC register
+-    pub crrcr: CRRCR,
++    // Clock recovery RC register
++    //pub crrcr: CRRCR,
+ }
+ 
+ /// CSR Control/Status Register
+@@ -107,6 +107,7 @@ impl CSR {
+     }
+ }
+ 
++/*
+ /// Clock recovery RC register
+ pub struct CRRCR {
+     _0: (),
+@@ -127,6 +128,7 @@ impl CRRCR {
+         self.crrcr().read().hsi48rdy().bit()
+     }
+ }
++*/
+ 
+ /// BDCR Backup domain control register registers
+ pub struct BDCR {
+@@ -504,9 +506,9 @@ impl CFGR {
+             // Turn on USB, RNG Clock using the HSI48 CLK source (default)
+             if self.hsi48 {
+                 // p. 180 in ref-manual
+-                rcc.crrcr.modify(|_, w| w.hsi48on().set_bit());
++                //rcc.crrcr.modify(|_, w| w.hsi48on().set_bit());
+                 // Wait until HSI48 is running
+-                while rcc.crrcr.read().hsi48rdy().bit_is_clear() {}
++                //while rcc.crrcr.read().hsi48rdy().bit_is_clear() {}
+             }
+         }
+</code></pre>
+<p>Running <code>cargo build</code> should compile the project without any problems.</p>
+<h3 id="running-on-the-discovery-board">Running on the discovery board</h3>
+<p>Open another command prompt window and start OpenOCD with:</p>
+<pre><code>openocd -f interface/stlink.cfg -f target/stm32l4x.cfg
+</code></pre>
+<p>Then simply call <code>cargo run</code> to let the debugger connect to OpenOCD. I input <code>c</code> to step through the breakpoints until I get to the loop.</p>
+<div>
+	<figure>
+		<video class="lazy" autoplay loop muted>
+			<source src="&#x2F;images&#x2F;l4-blink&#x2F;blinky.mp4">
+		</video>
+		<noscript>
+			<video autoplay loop>
+				<source src="&#x2F;images&#x2F;l4-blink&#x2F;blinky.mp4">
+			</video>
+		</noscript>
+
+		<figcaption>
+			
+				Blinky LEDs on the Discovery board
+				
+		</figcaption>
+	</figure>
+</div>
+<hr />
+<h2 id="github-repository">GitHub repository</h2>
+<p>The code for this project can be found in <a href="https://github.com/ramonimbao/rust-l4-blink">this GitHub repository</a>.</p>
+
+    </div>
+
+    
+    
+
+    <div class="post-footer">
+        
+        
+        <div class="post-tags">
+            
+            <a href="https://rmi-kb.com/tags/stm32/">#STM32</a>
+            
+            <a href="https://rmi-kb.com/tags/rust/">#Rust</a>
+            
+            <a href="https://rmi-kb.com/tags/exploration/">#Exploration</a>
+            
+        </div>
+        
+        
+        <div class="post-nav">
+            
+            <a class="previous" href="https:&#x2F;&#x2F;rmi-kb.com&#x2F;hello-world&#x2F;">‹ Migration from WordPress</a>
+            
+            
+            <a class="next" href="https:&#x2F;&#x2F;rmi-kb.com&#x2F;stabilizer-adapter&#x2F;">PCB-mount Stabilizer Adapter for Plate-mount Handwired Keyboard Projects ›</a>
+            
+            
+            
+        </div>
+        
+
+        
+
+    </div>
+
+    <!-- Disqus -->
+    <!--
+    <div id='disqus_thread'></div>
+    <script>
+        (function () {
+            var d = document, s = d.createElement('script');
+            s.src = 'https://ramonimbao.disqus.com/embed.js';
+            s.setAttribute('data-timestamp', +new Date());
+            (d.head || d.body).appendChild(s);
+        })();
+    </script>
+    <noscript>Please enable JavaScript to view the <a href='https://disqus.com/?ref_noscript' rel='nofollow'>comments
+            powered by Disqus.</a></noscript>
+        -->
+
+    
+    
+</article>
+
+
+            </div>
+        </main>
+
+        
+        
+    </div>
+
+      
+          <script>
+            document.addEventListener("DOMContentLoaded", function() {
+                yall({
+                    observeChanges: true
+                });
+            });
+          </script>
+          <script type="text/javascript" src="https://rmi-kb.com/even.js" ></script>
+      
+    </body>
+
+</html>

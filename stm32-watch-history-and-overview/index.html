@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta http-equiv="content-type" content="text/html; charset=utf-8">
+
+    <link rel="shortcut icon" type="image/x-icon" href="/images/favicon.png">
+
+    <!-- Enable responsiveness on mobile devices-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+
+    <title>Ramon Imbao&#x27;s Blog</title>
+
+    
+
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slideout/1.0.1/slideout.min.js"></script>
+    
+
+    <script src="/js/yall.min.js"></script>
+    
+
+    
+    <link rel="stylesheet" href="https://rmi-kb.com/site.css">
+    
+    <style type="text/css">
+        video {
+            width: 100%;
+             !important height: auto;
+             !important
+        }
+    </style>
+
+    <link rel="stylesheet" href="/css/rating.css">
+    <link rel="stylesheet" href="/css/cv.css">
+    
+
+    
+    
+</head>
+
+<body>
+    <div class="container">
+
+        <div id="mobile-navbar" class="mobile-navbar">
+            <div class="mobile-header-logo">
+                <a href="/" class="logo">Ramon Imbao&#x27;s Blog</a>
+            </div>
+            <div class="mobile-navbar-icon icon-out">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+
+        <nav id="mobile-menu" class="mobile-menu slideout-menu slideout-menu-left">
+            <ul class="mobile-menu-list">
+                
+                <li class="mobile-menu-item">
+                    <a href="https:&#x2F;&#x2F;rmi-kb.com&#x2F;">
+                        Home
+                    </a>
+                </li>
+                
+                <li class="mobile-menu-item">
+                    <a href="&#x2F;tags">
+                        Tags
+                    </a>
+                </li>
+                
+                <li class="mobile-menu-item">
+                    <a href="https:&#x2F;&#x2F;discord.gg&#x2F;hXcpWvg5zB">
+                        Discord
+                    </a>
+                </li>
+                
+            </ul>
+        </nav>
+
+        <header id="header">
+            <div class="logo"><a href="https:&#x2F;&#x2F;rmi-kb.com&#x2F;">Ramon Imbao&#x27;s Blog</a></div>
+            <nav class="menu">
+                <ul>
+                    
+                    <li>
+                        <a href="https:&#x2F;&#x2F;rmi-kb.com&#x2F;">
+                            Home
+                        </a>
+                    </li>
+                    
+                    <li>
+                        <a href="&#x2F;tags">
+                            Tags
+                        </a>
+                    </li>
+                    
+                    <li>
+                        <a href="https:&#x2F;&#x2F;discord.gg&#x2F;hXcpWvg5zB">
+                            Discord
+                        </a>
+                    </li>
+                    
+                </ul>
+            </nav>
+        </header>
+
+        <main>
+            <div class="content" id="mobile-panel">
+                
+
+
+
+<article class="post">
+    
+    <header class="post__header">
+        <h1 class="post__title">
+            <a href="https:&#x2F;&#x2F;rmi-kb.com&#x2F;stm32-watch-history-and-overview&#x2F;">DIY STM32 Watch — History &amp; Overview</a>
+        </h1>
+        <div class="post__meta">
+            <span class="post__time">2017-02-25</span>
+            
+        </div>
+    </header>
+
+    <div class="post-content">
+        <p>I regularly read <a href="https://hackaday.com/">Hackaday</a> and browse through projects on <a href="https://hackaday.io/">Hackaday.io</a>. One of the projects I came across was this <em>really sexy</em> watch called <a href="https://hackaday.io/project/12876-chronio">Chronio</a> by user Max K. I wanted a watch just like Max K's but I wanted to do something I can call mine.</p>
+<span id="continue-reading"></span><div>
+	<figure>
+		<a href="&#x2F;images&#x2F;watch-images&#x2F;max_k_watch.jpg" target="_blank">
+			<img class="lazy" data-src="&#x2F;images&#x2F;watch-images&#x2F;max_k_watch.jpg">
+			<noscript>
+				<img src="&#x2F;images&#x2F;watch-images&#x2F;max_k_watch.jpg">
+			</noscript>
+		</a>
+
+		
+		<figcaption>
+			
+				Max K&#x27;s Chronio Watch
+				
+		</figcaption>
+		
+	</figure>
+</div>
+<p>Around this time, I had gotten myself an inexpensive STM32 development board: the <a href="http://www.st.com/en/evaluation-tools/nucleo-f411re.html">NUCLEO-F411RE</a>. I wanted to try something beyond Arduino; AVR would've been the next logical step but the price of these Nucleo boards is ultimately what made me choost ST's ARM microcontrollers.</p>
+<p>I decided that I will take this time to learn about ARM and STM32 by creating my own DIY watch. As an added difficulty for myself (and because I don't want to use the online <a href="https://developer.mbed.org/">mbed</a> IDE), I should use only the STM32CubeMX and ST's CubeHAL.</p>
+<p>So on the 1st of October 2016, I started a new project in KiCAD, laid out the board, and had it sent to <a href="https://elecrow.com">Elecrow</a> for fabrication. It would take over a month to get here since I picked the cheapest shipping option. I bought a new <a href="http://www.st.com/en/evaluation-tools/nucleo-l031k6.html">NUCLEO-L031K6</a> development board and a <a href="http://www.ti.com/tool/430BOOST-SHARP96/">Sharp Memory LCD Booster Pack</a> and got to work writing code for it. I also bought myself a <a href="https://leanpub.com/mastering-stm32">book</a> to help out in mastering STM32 (<em>heh</em>). Around six weeks later, I got the boards and populated them. I found an error in the PCB, fixed it and had it fabricated again.</p>
+<p>I also modeled a basic rectangular enclosure for it in <a href="https://www.freecadweb.org/">FreeCAD</a>. This was to be 3D printed on my FlashForge Creator Pro. The populated boards helped out a lot in imagining how everything would look. At this time, I wasn't aware you could just export the board as a 3D model in PcbNew. Oh well.</p>
+<p>I still had university, so I didn't work on my watch as often. But two board revisions, countless grams of filament, and around four months later, I <em>kinda</em> finished my watch!</p>
+<div>
+	<figure>
+		<a href="&#x2F;images&#x2F;watch-images&#x2F;my_diy_watch.jpg" target="_blank">
+			<img class="lazy" data-src="&#x2F;images&#x2F;watch-images&#x2F;my_diy_watch.jpg">
+			<noscript>
+				<img src="&#x2F;images&#x2F;watch-images&#x2F;my_diy_watch.jpg">
+			</noscript>
+		</a>
+
+		
+		<figcaption>
+			
+				My STM32-based DIY watch. It&#x27;s only kinda finished.
+				
+		</figcaption>
+		
+	</figure>
+</div>
+<p>I say <em>kinda</em> because the code is still unfinished, but it very much works if you don't mind having to adjust it a few minutes forward every day. I'm still waiting for parts to arrive from Mouser, but here are the specs of the watch:</p>
+<ul>
+<li>39 mm wide × 59 mm long × 13 mm thick</li>
+<li>Uses standard 20 mm watch bands</li>
+<li><em>Curved!</em></li>
+<li>Uses an STM32L051K8 microcontroller (<em>whopping</em> 64K flash, 8K RAM)</li>
+<li>CR2032 battery-powered. Gets ~1 month of battery life as of now.
+128 × 128 Sharp Memory LCD</li>
+<li>Three buttons</li>
+</ul>
+<p>Clearly, you can tell where I got most of my inspiration from.</p>
+<p>I'll be posting more in-depth about the aspects of the watch like the board layout, the 3D printed, enclosure, and the unfinished code (oh no) in future posts. And just like how <em>Chronio</em> is open source, I'll also be open-sourcing mine. Soon!</p>
+<p>Stay tuned!</p>
+
+    </div>
+
+    
+    
+
+    <div class="post-footer">
+        
+        
+        <div class="post-tags">
+            
+            <a href="https://rmi-kb.com/tags/stm32/">#STM32</a>
+            
+            <a href="https://rmi-kb.com/tags/watch/">#Watch</a>
+            
+            <a href="https://rmi-kb.com/tags/project/">#Project</a>
+            
+        </div>
+        
+        
+        <div class="post-nav">
+            
+            
+            <a class="next" href="https:&#x2F;&#x2F;rmi-kb.com&#x2F;stm32-watch-bom&#x2F;">DIY STM32 Watch — Bill of Materials ›</a>
+            
+            
+            
+        </div>
+        
+
+        
+
+    </div>
+
+    <!-- Disqus -->
+    <!--
+    <div id='disqus_thread'></div>
+    <script>
+        (function () {
+            var d = document, s = d.createElement('script');
+            s.src = 'https://ramonimbao.disqus.com/embed.js';
+            s.setAttribute('data-timestamp', +new Date());
+            (d.head || d.body).appendChild(s);
+        })();
+    </script>
+    <noscript>Please enable JavaScript to view the <a href='https://disqus.com/?ref_noscript' rel='nofollow'>comments
+            powered by Disqus.</a></noscript>
+        -->
+
+    
+    
+</article>
+
+
+            </div>
+        </main>
+
+        
+        
+    </div>
+
+      
+          <script>
+            document.addEventListener("DOMContentLoaded", function() {
+                yall({
+                    observeChanges: true
+                });
+            });
+          </script>
+          <script type="text/javascript" src="https://rmi-kb.com/even.js" ></script>
+      
+    </body>
+
+</html>

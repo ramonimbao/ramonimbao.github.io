@@ -1,0 +1,1414 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta http-equiv="content-type" content="text/html; charset=utf-8">
+
+    <link rel="shortcut icon" type="image/x-icon" href="/images/favicon.png">
+
+    <!-- Enable responsiveness on mobile devices-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+
+    <title>Ramon Imbao&#x27;s Blog</title>
+
+    
+
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slideout/1.0.1/slideout.min.js"></script>
+    
+
+    <script src="/js/yall.min.js"></script>
+    
+
+    
+    <link rel="stylesheet" href="https://rmi-kb.com/site.css">
+    
+    <style type="text/css">
+        video {
+            width: 100%;
+             !important height: auto;
+             !important
+        }
+    </style>
+
+    <link rel="stylesheet" href="/css/rating.css">
+    <link rel="stylesheet" href="/css/cv.css">
+    
+
+    
+    
+</head>
+
+<body>
+    <div class="container">
+
+        <div id="mobile-navbar" class="mobile-navbar">
+            <div class="mobile-header-logo">
+                <a href="/" class="logo">Ramon Imbao&#x27;s Blog</a>
+            </div>
+            <div class="mobile-navbar-icon icon-out">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+
+        <nav id="mobile-menu" class="mobile-menu slideout-menu slideout-menu-left">
+            <ul class="mobile-menu-list">
+                
+                <li class="mobile-menu-item">
+                    <a href="https:&#x2F;&#x2F;rmi-kb.com&#x2F;">
+                        Home
+                    </a>
+                </li>
+                
+                <li class="mobile-menu-item">
+                    <a href="&#x2F;tags">
+                        Tags
+                    </a>
+                </li>
+                
+                <li class="mobile-menu-item">
+                    <a href="https:&#x2F;&#x2F;discord.gg&#x2F;hXcpWvg5zB">
+                        Discord
+                    </a>
+                </li>
+                
+            </ul>
+        </nav>
+
+        <header id="header">
+            <div class="logo"><a href="https:&#x2F;&#x2F;rmi-kb.com&#x2F;">Ramon Imbao&#x27;s Blog</a></div>
+            <nav class="menu">
+                <ul>
+                    
+                    <li>
+                        <a href="https:&#x2F;&#x2F;rmi-kb.com&#x2F;">
+                            Home
+                        </a>
+                    </li>
+                    
+                    <li>
+                        <a href="&#x2F;tags">
+                            Tags
+                        </a>
+                    </li>
+                    
+                    <li>
+                        <a href="https:&#x2F;&#x2F;discord.gg&#x2F;hXcpWvg5zB">
+                            Discord
+                        </a>
+                    </li>
+                    
+                </ul>
+            </nav>
+        </header>
+
+        <main>
+            <div class="content" id="mobile-panel">
+                
+
+
+<div class="post-toc" id="post-toc">
+    <h2 class="post-toc-title">Contents</h2>
+    <div class="post-toc-content always-active">
+        <nav id="TableOfContents">
+            <ul>
+                
+                <li>
+                    <a href="https://rmi-kb.com/herringbone/#description" class="toc-link">Description</a>
+                    
+                </li>
+                
+                <li>
+                    <a href="https://rmi-kb.com/herringbone/#layout" class="toc-link">Layout</a>
+                    
+                </li>
+                
+                <li>
+                    <a href="https://rmi-kb.com/herringbone/#build-guide" class="toc-link">Build Guide</a>
+                    
+                    <ul>
+                        
+                        <li>
+                            <a href="https://rmi-kb.com/herringbone/#unboxing" class="toc-link">Unboxing</a>
+                        </li>
+                        
+                        <li>
+                            <a href="https://rmi-kb.com/herringbone/#soldering-the-components" class="toc-link">Soldering the Components</a>
+                        </li>
+                        
+                        <li>
+                            <a href="https://rmi-kb.com/herringbone/#testing-the-pcb" class="toc-link">Testing the PCB</a>
+                        </li>
+                        
+                        <li>
+                            <a href="https://rmi-kb.com/herringbone/#flashing-the-pcb" class="toc-link">Flashing the PCB</a>
+                        </li>
+                        
+                        <li>
+                            <a href="https://rmi-kb.com/herringbone/#low-profile-assembly" class="toc-link">Low Profile Assembly</a>
+                        </li>
+                        
+                        <li>
+                            <a href="https://rmi-kb.com/herringbone/#high-profile-assembly" class="toc-link">High Profile Assembly</a>
+                        </li>
+                        
+                    </ul>
+                    
+                </li>
+                
+                <li>
+                    <a href="https://rmi-kb.com/herringbone/#glamour-shots" class="toc-link">Glamour Shots</a>
+                    
+                </li>
+                
+                <li>
+                    <a href="https://rmi-kb.com/herringbone/#remarks" class="toc-link">Remarks</a>
+                    
+                </li>
+                
+            </ul>
+        </nav>
+    </div>
+</div>
+
+
+<article class="post">
+    
+    <header class="post__header">
+        <h1 class="post__title">
+            <a href="https:&#x2F;&#x2F;rmi-kb.com&#x2F;herringbone&#x2F;">Through-hole 75% Keyboard &#x27;Herringbone&#x27;</a>
+        </h1>
+        <div class="post__meta">
+            <span class="post__time">2020-08-22</span>
+            
+        </div>
+    </header>
+
+    <div class="post-content">
+        <div>
+	<figure>
+		<a href="https://i.imgur.com/3Fl3oaE.jpg" target="_blank">
+			<img class="lazy" data-src="https://i.imgur.com/3Fl3oaEl.jpg">
+			<noscript>
+				<img src="https://i.imgur.com/3Fl3oaEl.jpg">
+			</noscript>
+		</a>
+
+		
+	</figure>
+</div>
+<div>
+	<figure>
+		<a href="&#x2F;images&#x2F;herringbone&#x2F;glamour_lopro.jpg" target="_blank">
+			<img class="lazy" data-src="&#x2F;images&#x2F;herringbone&#x2F;glamour_lopro.jpg">
+			<noscript>
+				<img src="&#x2F;images&#x2F;herringbone&#x2F;glamour_lopro.jpg">
+			</noscript>
+		</a>
+
+		
+	</figure>
+</div>
+<div>
+	<figure>
+		<a href="&#x2F;images&#x2F;herringbone&#x2F;glamour_components.jpg" target="_blank">
+			<img class="lazy" data-src="&#x2F;images&#x2F;herringbone&#x2F;glamour_components.jpg">
+			<noscript>
+				<img src="&#x2F;images&#x2F;herringbone&#x2F;glamour_components.jpg">
+			</noscript>
+		</a>
+
+		
+	</figure>
+</div>
+<span id="continue-reading"></span><h2 id="description">Description</h2>
+<p>Inspired by <a href="https://github.com/hsgw/plaid">Plaid</a>, <a href="https://github.com/yiancar/gingham_pcb">Gingham</a>, I present to you the Herringbone keyboard: a 75% through hole keyboiard kit!</p>
+<h2 id="layout">Layout</h2>
+<div>
+	<figure>
+		<a href="&#x2F;images&#x2F;herringbone&#x2F;layout.png" target="_blank">
+			<img class="lazy" data-src="&#x2F;images&#x2F;herringbone&#x2F;layout.png">
+			<noscript>
+				<img src="&#x2F;images&#x2F;herringbone&#x2F;layout.png">
+			</noscript>
+		</a>
+
+		
+	</figure>
+</div>
+<p>This time around, there's only a few layouts supported by the Herringbone: split left shift, split backspace, and ISO enter. There is an extra F13 key at the F-row (that I mapped to Print Screen on the default layout). While building the keyboard, I thought to myself I should have included the option for <code>1.5-1.5-7-1.5-1.5</code> for the bottom row. Maybe for a Herringbone V2? 👀</p>
+<h2 id="build-guide">Build Guide</h2>
+<p>This section is for the participants in the group buy. Just like the Wete, it's a straightforward build, and I just want to highlight the order you want to go through when soldering all the components (and there are a lot to be soldered!)</p>
+<h3 id="unboxing">Unboxing</h3>
+<p>Depending on which kit you ordered, you will receive either the PCB skeleton case in parts or the acrylic case semi-assembled. If you received the acrylic case, simply unscrew the eight screws at the top and separate all the acrylic pieces.</p>
+<h3 id="soldering-the-components">Soldering the Components</h3>
+<p>The meat and potatoes of the build. Whether you have the low profile or high profile kit, check that you have the components listed below:</p>
+<div>
+	<figure>
+		<a href="&#x2F;images&#x2F;herringbone&#x2F;components_laid_out.jpg" target="_blank">
+			<img class="lazy" data-src="&#x2F;images&#x2F;herringbone&#x2F;components_laid_out.jpg">
+			<noscript>
+				<img src="&#x2F;images&#x2F;herringbone&#x2F;components_laid_out.jpg">
+			</noscript>
+		</a>
+
+		
+	</figure>
+</div>
+<p>From top to bottom, left to right:</p>
+<ul>
+<li>Long tape of diodes (1N4148)</li>
+<li>2x3 male header</li>
+<li>2× 3.6V zener diodes</li>
+<li>Fuse</li>
+<li>Bag of loose components, with:
+<ul>
+<li>16 MHz crystal</li>
+<li>3mm red LED</li>
+<li>2× 22pF capacitors</li>
+<li>2× 68Ω resistors</li>
+<li>2× 100nF capacitors</li>
+<li>10µF capacacitor</li>
+<li>2× tact switches (NOTE: High profile users will get two extra ones with longer stems)</li>
+</ul>
+</li>
+<li>2× 1.5kΩ resistors</li>
+<li>2× 5.1kΩ resistors</li>
+<li>ATmega32A IC</li>
+<li>40-pin IC socket</li>
+<li>Main PCB</li>
+</ul>
+<p>We'll be doing the lowest components first, and then moving on to the taller components.</p>
+<h4 id="3-6v-zener-diodes"><strong><code>3.6V ZENER DIODES</code></strong></h4>
+<p>We'll start with the components near the USB connector, beginning with <code>D2</code> and <code>D3</code>. These use the <strong>3.6V zener diodes</strong>. These are the two diodes separated from the long tape of diodes. <strong>Do NOT mix these up!</strong></p>
+<div>
+	<figure>
+		<a href="&#x2F;images&#x2F;herringbone&#x2F;D2-D3.jpg" target="_blank">
+			<img class="lazy" data-src="&#x2F;images&#x2F;herringbone&#x2F;D2-D3.jpg">
+			<noscript>
+				<img src="&#x2F;images&#x2F;herringbone&#x2F;D2-D3.jpg">
+			</noscript>
+		</a>
+
+		
+	</figure>
+</div>
+<p>Included with the kit is a small diode bending tool. Place your diodes inside the thinner tool like seen below.</p>
+<div>
+	<figure>
+		<a href="&#x2F;images&#x2F;herringbone&#x2F;diode_bend_1.jpg" target="_blank">
+			<img class="lazy" data-src="&#x2F;images&#x2F;herringbone&#x2F;diode_bend_1.jpg">
+			<noscript>
+				<img src="&#x2F;images&#x2F;herringbone&#x2F;diode_bend_1.jpg">
+			</noscript>
+		</a>
+
+		
+	</figure>
+</div>
+<p>Place the wider tool on top and press down.</p>
+<div>
+	<figure>
+		<a href="&#x2F;images&#x2F;herringbone&#x2F;diode_bend_2.jpg" target="_blank">
+			<img class="lazy" data-src="&#x2F;images&#x2F;herringbone&#x2F;diode_bend_2.jpg">
+			<noscript>
+				<img src="&#x2F;images&#x2F;herringbone&#x2F;diode_bend_2.jpg">
+			</noscript>
+		</a>
+
+		
+	</figure>
+</div>
+<div>
+	<figure>
+		<a href="&#x2F;images&#x2F;herringbone&#x2F;diode_bend_3.jpg" target="_blank">
+			<img class="lazy" data-src="&#x2F;images&#x2F;herringbone&#x2F;diode_bend_3.jpg">
+			<noscript>
+				<img src="&#x2F;images&#x2F;herringbone&#x2F;diode_bend_3.jpg">
+			</noscript>
+		</a>
+
+		
+	</figure>
+</div>
+<p>Finish it off by removing the tape, and extracting the diodes from the tool.</p>
+<div>
+	<figure>
+		<a href="&#x2F;images&#x2F;herringbone&#x2F;diode_bend_4.jpg" target="_blank">
+			<img class="lazy" data-src="&#x2F;images&#x2F;herringbone&#x2F;diode_bend_4.jpg">
+			<noscript>
+				<img src="&#x2F;images&#x2F;herringbone&#x2F;diode_bend_4.jpg">
+			</noscript>
+		</a>
+
+		
+	</figure>
+</div>
+<div>
+	<figure>
+		<a href="&#x2F;images&#x2F;herringbone&#x2F;diode_bend_5.jpg" target="_blank">
+			<img class="lazy" data-src="&#x2F;images&#x2F;herringbone&#x2F;diode_bend_5.jpg">
+			<noscript>
+				<img src="&#x2F;images&#x2F;herringbone&#x2F;diode_bend_5.jpg">
+			</noscript>
+		</a>
+
+		
+	</figure>
+</div>
+<p>The technique also applies to the 1N4148 diodes we'll be doing later.</p>
+<p>Finally, place the zener diodes in the components marked D2 and D3. <strong>Orientation is important!</strong> The black bar on the diode should align with the bar in the symbol on the PCB. These diodes should have the black mark on the bottom.</p>
+<div>
+	<figure>
+		<a href="&#x2F;images&#x2F;herringbone&#x2F;D3_placement.jpg" target="_blank">
+			<img class="lazy" data-src="&#x2F;images&#x2F;herringbone&#x2F;D3_placement.jpg">
+			<noscript>
+				<img src="&#x2F;images&#x2F;herringbone&#x2F;D3_placement.jpg">
+			</noscript>
+		</a>
+
+		
+		<figcaption>
+			
+				Here, only one diode is placed to see the comparison between the component and the symbol. Place both of course. Remember, black bar on diode aligns with bar on symbol.
+				
+		</figcaption>
+		
+	</figure>
+</div>
+<p>After placing the components in the hole, bend the legs on the underside a bit so they don't fall out when you flip the board.</p>
+<div>
+	<figure>
+		<a href="&#x2F;images&#x2F;herringbone&#x2F;bend_legs.jpg" target="_blank">
+			<img class="lazy" data-src="&#x2F;images&#x2F;herringbone&#x2F;bend_legs.jpg">
+			<noscript>
+				<img src="&#x2F;images&#x2F;herringbone&#x2F;bend_legs.jpg">
+			</noscript>
+		</a>
+
+		
+	</figure>
+</div>
+<p>Solder the pads from the underside, and trim the legs with a flush cutter.</p>
+<div>
+	<figure>
+		<a href="&#x2F;images&#x2F;herringbone&#x2F;solder_pads.jpg" target="_blank">
+			<img class="lazy" data-src="&#x2F;images&#x2F;herringbone&#x2F;solder_pads.jpg">
+			<noscript>
+				<img src="&#x2F;images&#x2F;herringbone&#x2F;solder_pads.jpg">
+			</noscript>
+		</a>
+
+		
+		<figcaption>
+			
+				Two of the pads have too much solder. :(
+				
+		</figcaption>
+		
+	</figure>
+</div>
+<div>
+	<figure>
+		<a href="&#x2F;images&#x2F;herringbone&#x2F;trim_legs.jpg" target="_blank">
+			<img class="lazy" data-src="&#x2F;images&#x2F;herringbone&#x2F;trim_legs.jpg">
+			<noscript>
+				<img src="&#x2F;images&#x2F;herringbone&#x2F;trim_legs.jpg">
+			</noscript>
+		</a>
+
+		
+	</figure>
+</div>
+<div>
+	<figure>
+		<a href="&#x2F;images&#x2F;herringbone&#x2F;trimmed_legs.jpg" target="_blank">
+			<img class="lazy" data-src="&#x2F;images&#x2F;herringbone&#x2F;trimmed_legs.jpg">
+			<noscript>
+				<img src="&#x2F;images&#x2F;herringbone&#x2F;trimmed_legs.jpg">
+			</noscript>
+		</a>
+
+		
+	</figure>
+</div>
+<p><em>NOTE: This process of bending, placing, bending outward, soldering, and trimming applies to the rest of the components.</em></p>
+<h4 id="5-1ko-resistors"><strong><code>5.1kΩ RESISTORS</code></strong></h4>
+<p>Next up are the 5.1kΩ resistors. These come in a tape. These go in the components marked <code>R5</code> and <code>R6</code>. Orientation does not matter.</p>
+<p>Unfortunately, you can't use the diode bending tool to bend the resistors.</p>
+<div>
+	<figure>
+		<a href="&#x2F;images&#x2F;herringbone&#x2F;resistors_5k1.jpg" target="_blank">
+			<img class="lazy" data-src="&#x2F;images&#x2F;herringbone&#x2F;resistors_5k1.jpg">
+			<noscript>
+				<img src="&#x2F;images&#x2F;herringbone&#x2F;resistors_5k1.jpg">
+			</noscript>
+		</a>
+
+		
+	</figure>
+</div>
+<p>Remove the tape, bend them at the innermost edges of the legs slightly inwards, place them in the hole, and then do the bend-solder-trim. Make sure that the leg of the resistors do not touch the other components later.</p>
+<div>
+	<figure>
+		<a href="&#x2F;images&#x2F;herringbone&#x2F;resistors_bent.jpg" target="_blank">
+			<img class="lazy" data-src="&#x2F;images&#x2F;herringbone&#x2F;resistors_bent.jpg">
+			<noscript>
+				<img src="&#x2F;images&#x2F;herringbone&#x2F;resistors_bent.jpg">
+			</noscript>
+		</a>
+
+		
+	</figure>
+</div>
+<h4 id="1-5ko-resistors"><strong><code>1.5kΩ RESISTORS</code></strong></h4>
+<p>Next are the 1.5kΩ resistors. These come in a tape. These go in the components marked <code>R1</code> and <code>R2</code>. Do the same thing as with the 5.1kΩ resistors. Orientation does not matter.</p>
+<div>
+	<figure>
+		<a href="&#x2F;images&#x2F;herringbone&#x2F;resistors_1k5.jpg" target="_blank">
+			<img class="lazy" data-src="&#x2F;images&#x2F;herringbone&#x2F;resistors_1k5.jpg">
+			<noscript>
+				<img src="&#x2F;images&#x2F;herringbone&#x2F;resistors_1k5.jpg">
+			</noscript>
+		</a>
+
+		
+	</figure>
+</div>
+<p>Again, after installing the resistors, make sure that the legs don't touch other legs.</p>
+<div>
+	<figure>
+		<a href="&#x2F;images&#x2F;herringbone&#x2F;resistors_no_touch.jpg" target="_blank">
+			<img class="lazy" data-src="&#x2F;images&#x2F;herringbone&#x2F;resistors_no_touch.jpg">
+			<noscript>
+				<img src="&#x2F;images&#x2F;herringbone&#x2F;resistors_no_touch.jpg">
+			</noscript>
+		</a>
+
+		
+	</figure>
+</div>
+<h4 id="68o-resistors"><strong><code>68Ω RESISTORS</code></strong></h4>
+<p>Next are the 68Ω resistors from the bag of loose components. These go in the components marked <code>R3</code> and <code>R4</code>. Orientation does not matter.</p>
+<div>
+	<figure>
+		<a href="&#x2F;images&#x2F;herringbone&#x2F;resistors_68.jpg" target="_blank">
+			<img class="lazy" data-src="&#x2F;images&#x2F;herringbone&#x2F;resistors_68.jpg">
+			<noscript>
+				<img src="&#x2F;images&#x2F;herringbone&#x2F;resistors_68.jpg">
+			</noscript>
+		</a>
+
+		
+	</figure>
+</div>
+<p>Again, make sure the legs don't touch other legs!</p>
+<div>
+	<figure>
+		<a href="&#x2F;images&#x2F;herringbone&#x2F;resistors_all_no_touch.jpg" target="_blank">
+			<img class="lazy" data-src="&#x2F;images&#x2F;herringbone&#x2F;resistors_all_no_touch.jpg">
+			<noscript>
+				<img src="&#x2F;images&#x2F;herringbone&#x2F;resistors_all_no_touch.jpg">
+			</noscript>
+		</a>
+
+		
+	</figure>
+</div>
+<h4 id="22pf-capacitors"><strong><code>22pF CAPACITORS</code></strong></h4>
+<p>Next are the 22pF capacitors from the bag of loose components. These go in the components marked <code>C1</code> and <code>C2</code>. Orientation does not matter.</p>
+<p>When soldering make sure the legs do not touch the USB connections above. Don't touch those with your iron too, or <em>bad</em> things will happen.</p>
+<div>
+	<figure>
+		<a href="&#x2F;images&#x2F;herringbone&#x2F;capacitors_22p.jpg" target="_blank">
+			<img class="lazy" data-src="&#x2F;images&#x2F;herringbone&#x2F;capacitors_22p.jpg">
+			<noscript>
+				<img src="&#x2F;images&#x2F;herringbone&#x2F;capacitors_22p.jpg">
+			</noscript>
+		</a>
+
+		
+	</figure>
+</div>
+<h4 id="16-mhz-crystal"><strong><code>16 MHz CRYSTAL</code></strong></h4>
+<p>Next is the 16 MHz crystal from the bag of loose components. This goes in the component marked <code>Y1</code>. If it keeps falling out when you flip, you can use tape to hold it down before soldering.</p>
+<div>
+	<figure>
+		<a href="&#x2F;images&#x2F;herringbone&#x2F;crystal.jpg" target="_blank">
+			<img class="lazy" data-src="&#x2F;images&#x2F;herringbone&#x2F;crystal.jpg">
+			<noscript>
+				<img src="&#x2F;images&#x2F;herringbone&#x2F;crystal.jpg">
+			</noscript>
+		</a>
+
+		
+	</figure>
+</div>
+<div>
+	<figure>
+		<a href="&#x2F;images&#x2F;herringbone&#x2F;crystal_soldered.jpg" target="_blank">
+			<img class="lazy" data-src="&#x2F;images&#x2F;herringbone&#x2F;crystal_soldered.jpg">
+			<noscript>
+				<img src="&#x2F;images&#x2F;herringbone&#x2F;crystal_soldered.jpg">
+			</noscript>
+		</a>
+
+		
+		<figcaption>
+			
+				Keep it nice and tidy by making the capacitors perpendicular to the board.
+				
+		</figcaption>
+		
+	</figure>
+</div>
+<h4 id="100nf-capacitors"><strong><code>100nF CAPACITORS</code></strong></h4>
+<p>Next are the 100nF capacitors from the bag of loose components. These go in the components marked <code>C3</code> and <code>C4</code>. Orientation does not matter.</p>
+<p>You may have to bend the legs outward a bit before inserting. Make sure it's as flush as possible to the PCB and that it's perpendicular after mounting.</p>
+<div>
+	<figure>
+		<a href="&#x2F;images&#x2F;herringbone&#x2F;capacitors_100n.jpg" target="_blank">
+			<img class="lazy" data-src="&#x2F;images&#x2F;herringbone&#x2F;capacitors_100n.jpg">
+			<noscript>
+				<img src="&#x2F;images&#x2F;herringbone&#x2F;capacitors_100n.jpg">
+			</noscript>
+		</a>
+
+		
+	</figure>
+</div>
+<div>
+	<figure>
+		<a href="&#x2F;images&#x2F;herringbone&#x2F;capacitors_100n_soldered.jpg" target="_blank">
+			<img class="lazy" data-src="&#x2F;images&#x2F;herringbone&#x2F;capacitors_100n_soldered.jpg">
+			<noscript>
+				<img src="&#x2F;images&#x2F;herringbone&#x2F;capacitors_100n_soldered.jpg">
+			</noscript>
+		</a>
+
+		
+	</figure>
+</div>
+<h4 id="40-pin-ic-socket"><strong><code>40-PIN IC SOCKET</code></strong></h4>
+<p>Next is the 40-pin IC socket. Orient the socket such that the U-shaped cutout aligns with the U-shaped symbol on the PC (near the <code>U1</code> marking).</p>
+<div>
+	<figure>
+		<a href="&#x2F;images&#x2F;herringbone&#x2F;socket.jpg" target="_blank">
+			<img class="lazy" data-src="&#x2F;images&#x2F;herringbone&#x2F;socket.jpg">
+			<noscript>
+				<img src="&#x2F;images&#x2F;herringbone&#x2F;socket.jpg">
+			</noscript>
+		</a>
+
+		
+	</figure>
+</div>
+<p>I like soldering the corners first to tack the socket down before soldering the rest of the pins.</p>
+<div>
+	<figure>
+		<a href="&#x2F;images&#x2F;herringbone&#x2F;socket_corners.jpg" target="_blank">
+			<img class="lazy" data-src="&#x2F;images&#x2F;herringbone&#x2F;socket_corners.jpg">
+			<noscript>
+				<img src="&#x2F;images&#x2F;herringbone&#x2F;socket_corners.jpg">
+			</noscript>
+		</a>
+
+		
+	</figure>
+</div>
+<div>
+	<figure>
+		<a href="&#x2F;images&#x2F;herringbone&#x2F;socket_soldered.jpg" target="_blank">
+			<img class="lazy" data-src="&#x2F;images&#x2F;herringbone&#x2F;socket_soldered.jpg">
+			<noscript>
+				<img src="&#x2F;images&#x2F;herringbone&#x2F;socket_soldered.jpg">
+			</noscript>
+		</a>
+
+		
+		<figcaption>
+			
+				All the pins soldered.
+				
+		</figcaption>
+		
+	</figure>
+</div>
+<p><em>NOTE: Do <strong>NOT</strong> spend too much time on one pin or you risk overheating it, melting the plastic and causing the pin to fall off!</em></p>
+<div>
+	<figure>
+		<a href="&#x2F;images&#x2F;herringbone&#x2F;socket_flush.jpg" target="_blank">
+			<img class="lazy" data-src="&#x2F;images&#x2F;herringbone&#x2F;socket_flush.jpg">
+			<noscript>
+				<img src="&#x2F;images&#x2F;herringbone&#x2F;socket_flush.jpg">
+			</noscript>
+		</a>
+
+		
+		<figcaption>
+			
+				The socket should be flush with the PCB. The capacitors sticking out that much is fine.
+				
+		</figcaption>
+		
+	</figure>
+</div>
+<h4 id="1n4148-diodes"><strong><code>1N4148 DIODES</code></strong></h4>
+<p>Next are the 1N4148 diodes, the ones that came in the long tape. These do not have markings but are the ones right beneath the herringbone pattern starting from the left side of the PCB. <strong>Orientation is important!</strong> Match the black mark on the diode with the mark on the PCB. The black mark should be on top for all the 1N4148 diodes.</p>
+<p>Do the same technique as seen in the <code>3.6V ZENER DIODE</code> section for bending, soldering, and trimming the diodes. Don't forget the diode bending tool! It's up to you if you want to place all of them, then solder and trim, or do it five at a time like I did.</p>
+<div>
+	<figure>
+		<a href="&#x2F;images&#x2F;herringbone&#x2F;array_5.jpg" target="_blank">
+			<img class="lazy" data-src="&#x2F;images&#x2F;herringbone&#x2F;array_5.jpg">
+			<noscript>
+				<img src="&#x2F;images&#x2F;herringbone&#x2F;array_5.jpg">
+			</noscript>
+		</a>
+
+		
+		<figcaption>
+			
+				Five done.
+				
+		</figcaption>
+		
+	</figure>
+</div>
+<div>
+	<figure>
+		<a href="&#x2F;images&#x2F;herringbone&#x2F;array_half.jpg" target="_blank">
+			<img class="lazy" data-src="&#x2F;images&#x2F;herringbone&#x2F;array_half.jpg">
+			<noscript>
+				<img src="&#x2F;images&#x2F;herringbone&#x2F;array_half.jpg">
+			</noscript>
+		</a>
+
+		
+		<figcaption>
+			
+				Over halfway there.
+				
+		</figcaption>
+		
+	</figure>
+</div>
+<div>
+	<figure>
+		<a href="&#x2F;images&#x2F;herringbone&#x2F;array_full.jpg" target="_blank">
+			<img class="lazy" data-src="&#x2F;images&#x2F;herringbone&#x2F;array_full.jpg">
+			<noscript>
+				<img src="&#x2F;images&#x2F;herringbone&#x2F;array_full.jpg">
+			</noscript>
+		</a>
+
+		
+		<figcaption>
+			
+				Complete!
+				
+		</figcaption>
+		
+	</figure>
+</div>
+<p>It's easy! Just <em>really</em> tedious.</p>
+<h4 id="10uf-capacitor"><strong><code>10µF CAPACITOR</code></strong></h4>
+<p>And back again to near the USB connector. Next is the 10µF capacitor in the loose bag of components. <strong>Orientation  is important!</strong> The white band on one side of the capacitor (which marks that side as negative) should align with the filled side on the symbol on the PCB.</p>
+<div>
+	<figure>
+		<a href="&#x2F;images&#x2F;herringbone&#x2F;capacitor_10u.jpg" target="_blank">
+			<img class="lazy" data-src="&#x2F;images&#x2F;herringbone&#x2F;capacitor_10u.jpg">
+			<noscript>
+				<img src="&#x2F;images&#x2F;herringbone&#x2F;capacitor_10u.jpg">
+			</noscript>
+		</a>
+
+		
+	</figure>
+</div>
+<div>
+	<figure>
+		<a href="&#x2F;images&#x2F;herringbone&#x2F;capacitor_10u_closeup.jpg" target="_blank">
+			<img class="lazy" data-src="&#x2F;images&#x2F;herringbone&#x2F;capacitor_10u_closeup.jpg">
+			<noscript>
+				<img src="&#x2F;images&#x2F;herringbone&#x2F;capacitor_10u_closeup.jpg">
+			</noscript>
+		</a>
+
+		
+		<figcaption>
+			
+				In most cases, the shorter leg will also mark the negative side, but always go with the label instead of the leg length!
+				
+		</figcaption>
+		
+	</figure>
+</div>
+<div>
+	<figure>
+		<a href="&#x2F;images&#x2F;herringbone&#x2F;capacitor_10u_flush.jpg" target="_blank">
+			<img class="lazy" data-src="&#x2F;images&#x2F;herringbone&#x2F;capacitor_10u_flush.jpg">
+			<noscript>
+				<img src="&#x2F;images&#x2F;herringbone&#x2F;capacitor_10u_flush.jpg">
+			</noscript>
+		</a>
+
+		
+		<figcaption>
+			
+				The capacitor should sit flush to the PCB.
+				
+		</figcaption>
+		
+	</figure>
+</div>
+<h4 id="3mm-red-led"><strong><code>3mm RED LED</code></strong></h4>
+<p>Next up is the 3mm red LED. <strong>Orientation is important!</strong></p>
+<div>
+	<figure>
+		<a href="&#x2F;images&#x2F;herringbone&#x2F;led.jpg" target="_blank">
+			<img class="lazy" data-src="&#x2F;images&#x2F;herringbone&#x2F;led.jpg">
+			<noscript>
+				<img src="&#x2F;images&#x2F;herringbone&#x2F;led.jpg">
+			</noscript>
+		</a>
+
+		
+		<figcaption>
+			
+				Just like with the capacitor, the shorter leg will usually signify the negative side.
+				
+		</figcaption>
+		
+	</figure>
+</div>
+<div>
+	<figure>
+		<a href="&#x2F;images&#x2F;herringbone&#x2F;led_flat.jpg" target="_blank">
+			<img class="lazy" data-src="&#x2F;images&#x2F;herringbone&#x2F;led_flat.jpg">
+			<noscript>
+				<img src="&#x2F;images&#x2F;herringbone&#x2F;led_flat.jpg">
+			</noscript>
+		</a>
+
+		
+		<figcaption>
+			
+				A more sure way is to check which side of the LED is flat. The flat side is the negative side.
+				
+		</figcaption>
+		
+	</figure>
+</div>
+<p>Insert the LED such that the <strong>negative</strong> leg goes into the <strong>square</strong> hole.</p>
+<div>
+	<figure>
+		<a href="&#x2F;images&#x2F;herringbone&#x2F;led_flush.jpg" target="_blank">
+			<img class="lazy" data-src="&#x2F;images&#x2F;herringbone&#x2F;led_flush.jpg">
+			<noscript>
+				<img src="&#x2F;images&#x2F;herringbone&#x2F;led_flush.jpg">
+			</noscript>
+		</a>
+
+		
+		<figcaption>
+			
+				Just like with the capacitor, make sure the LED sits flush on the PCB.
+				
+		</figcaption>
+		
+	</figure>
+</div>
+<h4 id="tact-switches"><strong><code>TACT SWITCHES</code></strong></h4>
+<p>Next up are the two tact switches from the bag of loose components.</p>
+<p><em>NOTE: High profile case owners can opt to use the buttons with longer stems. This makes it easier to press the button when there's the high profile case.</em></p>
+<div>
+	<figure>
+		<a href="&#x2F;images&#x2F;herringbone&#x2F;tact.jpg" target="_blank">
+			<img class="lazy" data-src="&#x2F;images&#x2F;herringbone&#x2F;tact.jpg">
+			<noscript>
+				<img src="&#x2F;images&#x2F;herringbone&#x2F;tact.jpg">
+			</noscript>
+		</a>
+
+		
+	</figure>
+</div>
+<p>There is absolutely no way for you to insert this wrongly. You should never force the button to be in any position. It will go in the hole easily and stay in there while you solder.</p>
+<h4 id="2x3-male-header"><strong><code>2x3 MALE HEADER</code></strong></h4>
+<p>Next is the 2x3 male header from the bag of loose components. Insert it into the 2x3 hole marked <code>ISP</code> underneath the <code>RESET</code> button. Use tape to secure it to the PCB before flipping the PCB over and soldering. Remove the tape afterwards.</p>
+<div>
+	<figure>
+		<a href="&#x2F;images&#x2F;herringbone&#x2F;header.jpg" target="_blank">
+			<img class="lazy" data-src="&#x2F;images&#x2F;herringbone&#x2F;header.jpg">
+			<noscript>
+				<img src="&#x2F;images&#x2F;herringbone&#x2F;header.jpg">
+			</noscript>
+		</a>
+
+		
+	</figure>
+</div>
+<h4 id="fuse"><strong><code>FUSE</code></strong></h4>
+<p>Finally, the fuse. Remove the fuse from the tape and insert it into the component marked <code>F1</code>.</p>
+<div>
+	<figure>
+		<a href="&#x2F;images&#x2F;herringbone&#x2F;fuse.jpg" target="_blank">
+			<img class="lazy" data-src="&#x2F;images&#x2F;herringbone&#x2F;fuse.jpg">
+			<noscript>
+				<img src="&#x2F;images&#x2F;herringbone&#x2F;fuse.jpg">
+			</noscript>
+		</a>
+
+		
+	</figure>
+</div>
+<p>I'm not sure if this is the correct way of doing it, but it certainly looks better in my opinion. Mount the fuse such that the head is flush to the PCB.</p>
+<div>
+	<figure>
+		<a href="&#x2F;images&#x2F;herringbone&#x2F;fuse_flush.jpg" target="_blank">
+			<img class="lazy" data-src="&#x2F;images&#x2F;herringbone&#x2F;fuse_flush.jpg">
+			<noscript>
+				<img src="&#x2F;images&#x2F;herringbone&#x2F;fuse_flush.jpg">
+			</noscript>
+		</a>
+
+		
+	</figure>
+</div>
+<h4 id="atmega32a"><strong><code>ATMEGA32A</code></strong></h4>
+<p>Finally, grab the ATmega32A and mount it on the IC socket. <strong>Orientation is important!</strong>. Align the U-shaped marking to the U-shape portion of the socket (assuming you aligned it correctly). Make sure all the pins are aligned to each socket. If you press while misaligned, you <em>will</em> bend a pin.</p>
+<div>
+	<figure>
+		<a href="&#x2F;images&#x2F;herringbone&#x2F;mcu.jpg" target="_blank">
+			<img class="lazy" data-src="&#x2F;images&#x2F;herringbone&#x2F;mcu.jpg">
+			<noscript>
+				<img src="&#x2F;images&#x2F;herringbone&#x2F;mcu.jpg">
+			</noscript>
+		</a>
+
+		
+	</figure>
+</div>
+<div>
+	<figure>
+		<a href="&#x2F;images&#x2F;herringbone&#x2F;mcu_orientation.jpg" target="_blank">
+			<img class="lazy" data-src="&#x2F;images&#x2F;herringbone&#x2F;mcu_orientation.jpg">
+			<noscript>
+				<img src="&#x2F;images&#x2F;herringbone&#x2F;mcu_orientation.jpg">
+			</noscript>
+		</a>
+
+		
+		<figcaption>
+			
+				The U-shape on the top of the IC should be on the left.
+				
+		</figcaption>
+		
+	</figure>
+</div>
+<h3 id="testing-the-pcb">Testing the PCB</h3>
+<p>Now that you've assembled the PCB, you're ready to test it out! As mentioned, all the chips come with VIA firmware already. You can load up VIA and test out the keypresses by shorting the switch holes with tweezers. As of this writing, the <a href="https://github.com/the-via/keyboards/pull/275">pull request</a> for Herringbone had not yet been merged to VIA. Instead, download <a href="https://raw.githubusercontent.com/ramonimbao/keyboards/herringbone/src/herringbone/herringbone.json">this JSON file</a>, load up VIA and enable the Design tab, and load the JSON file you downloaded.</p>
+<div>
+	<figure>
+		<a href="&#x2F;images&#x2F;herringbone&#x2F;via_settings.png" target="_blank">
+			<img class="lazy" data-src="&#x2F;images&#x2F;herringbone&#x2F;via_settings.png">
+			<noscript>
+				<img src="&#x2F;images&#x2F;herringbone&#x2F;via_settings.png">
+			</noscript>
+		</a>
+
+		
+		<figcaption>
+			
+				Enable the Design tab.
+				
+		</figcaption>
+		
+	</figure>
+</div>
+<div>
+	<figure>
+		<a href="&#x2F;images&#x2F;herringbone&#x2F;via_design.png" target="_blank">
+			<img class="lazy" data-src="&#x2F;images&#x2F;herringbone&#x2F;via_design.png">
+			<noscript>
+				<img src="&#x2F;images&#x2F;herringbone&#x2F;via_design.png">
+			</noscript>
+		</a>
+
+		
+		<figcaption>
+			
+				Load the JSON file from the Design tab.
+				
+		</figcaption>
+		
+	</figure>
+</div>
+<p>Once the pull request has been merged, this should just be plug and play.</p>
+<h3 id="flashing-the-pcb">Flashing the PCB</h3>
+<p>All the PCBs now have <a href="https://caniusevia.com/">VIA</a> supported out of the box; you will no longer need to flash the firwmare to update the keymap. Simply download the VIA software and remap your keyboard.</p>
+<p>In case you do want to flash the firmware with something else, there is <a href="https://config.qmk.fm/#/ramonimbao/herringbone/LAYOUT_ansi">QMK Configurator</a> support.</p>
+<p>To flash firwmare, hold the BOOT button located next to the microcontroller and plug in your USB cable. Run <a href="https://qmk.fm/toolbox/">QMK Toolbox</a> and it should detect the keyboard and QMK Toolbox should report <code>USBAsp device connected</code>.</p>
+<p>In Windows, if it's detected but there's a driver error, install the <a href="https://github.com/qmk/qmk_driver_installer/releases">QMK drivers</a>. This should have been done at first run of QMK toolbox, but if it didn't the URL is available.</p>
+<p>After detection, click <code>Open</code> in QMK Toolbox and select the firmware file you want to flash (from either VIA or Configurator). Select <code>atmega32a</code> as the MCU on the upper right. Hit <code>Flash</code>, wait for it to finish, and you're done!</p>
+<h3 id="low-profile-assembly">Low Profile Assembly</h3>
+<p><em>NOTE: The following section applies to low profile kit owners.</em></p>
+<p>Grab eight M2×5 brass standoffs and eight M2×4 screws and install them on to the main PCB with the standoffs on the bottom side and the screws on the top side.</p>
+<div>
+	<figure>
+		<a href="&#x2F;images&#x2F;herringbone&#x2F;lp_standoffs_short.jpg" target="_blank">
+			<img class="lazy" data-src="&#x2F;images&#x2F;herringbone&#x2F;lp_standoffs_short.jpg">
+			<noscript>
+				<img src="&#x2F;images&#x2F;herringbone&#x2F;lp_standoffs_short.jpg">
+			</noscript>
+		</a>
+
+		
+		<figcaption>
+			
+				Basically the short standoffs and short screws in the bag of screws.
+				
+		</figcaption>
+		
+	</figure>
+</div>
+<div>
+	<figure>
+		<a href="&#x2F;images&#x2F;herringbone&#x2F;lp_standoffs_short_installed.jpg" target="_blank">
+			<img class="lazy" data-src="&#x2F;images&#x2F;herringbone&#x2F;lp_standoffs_short_installed.jpg">
+			<noscript>
+				<img src="&#x2F;images&#x2F;herringbone&#x2F;lp_standoffs_short_installed.jpg">
+			</noscript>
+		</a>
+
+		
+		<figcaption>
+			
+				Install them in the locations marked in red.
+				
+		</figcaption>
+		
+	</figure>
+</div>
+<p>You will <strong>not</strong> be able to access these after the switches are installed, so screw them in as tight as you can.</p>
+<p>Next, grab four M2×5 standoffs and four M2×10 standoffs and install them in the last remaining holes in the upper section of the main PCB.</p>
+<div>
+	<figure>
+		<a href="&#x2F;images&#x2F;herringbone&#x2F;lp_standoffs_long.jpg" target="_blank">
+			<img class="lazy" data-src="&#x2F;images&#x2F;herringbone&#x2F;lp_standoffs_long.jpg">
+			<noscript>
+				<img src="&#x2F;images&#x2F;herringbone&#x2F;lp_standoffs_long.jpg">
+			</noscript>
+		</a>
+
+		
+		<figcaption>
+			
+				Basically the short standoffs and long standoffs.
+				
+		</figcaption>
+		
+	</figure>
+</div>
+<div>
+	<figure>
+		<a href="&#x2F;images&#x2F;herringbone&#x2F;lp_standoffs_long_installed.jpg" target="_blank">
+			<img class="lazy" data-src="&#x2F;images&#x2F;herringbone&#x2F;lp_standoffs_long_installed.jpg">
+			<noscript>
+				<img src="&#x2F;images&#x2F;herringbone&#x2F;lp_standoffs_long_installed.jpg">
+			</noscript>
+		</a>
+
+		
+	</figure>
+</div>
+<p>Now you're ready to assemble your keyboard like normal: install your stabilizers, install the switches to the plate, and solder the switches to the PCB.</p>
+<div>
+	<figure>
+		<a href="&#x2F;images&#x2F;herringbone&#x2F;lp_stabs.jpg" target="_blank">
+			<img class="lazy" data-src="&#x2F;images&#x2F;herringbone&#x2F;lp_stabs.jpg">
+			<noscript>
+				<img src="&#x2F;images&#x2F;herringbone&#x2F;lp_stabs.jpg">
+			</noscript>
+		</a>
+
+		
+	</figure>
+</div>
+<div>
+	<figure>
+		<a href="&#x2F;images&#x2F;herringbone&#x2F;lp_switches.jpg" target="_blank">
+			<img class="lazy" data-src="&#x2F;images&#x2F;herringbone&#x2F;lp_switches.jpg">
+			<noscript>
+				<img src="&#x2F;images&#x2F;herringbone&#x2F;lp_switches.jpg">
+			</noscript>
+		</a>
+
+		
+	</figure>
+</div>
+<div>
+	<figure>
+		<a href="&#x2F;images&#x2F;herringbone&#x2F;lp_soldered.jpg" target="_blank">
+			<img class="lazy" data-src="&#x2F;images&#x2F;herringbone&#x2F;lp_soldered.jpg">
+			<noscript>
+				<img src="&#x2F;images&#x2F;herringbone&#x2F;lp_soldered.jpg">
+			</noscript>
+		</a>
+
+		
+	</figure>
+</div>
+<p>If you have aluminum cone feet, install it now to the bottom PCB. If you think the herringbone pattern is too noisy, you can flip the PCB around to have a clean black-only or white-only look.</p>
+<div>
+	<figure>
+		<a href="&#x2F;images&#x2F;herringbone&#x2F;lp_feet_pattern.jpg" target="_blank">
+			<img class="lazy" data-src="&#x2F;images&#x2F;herringbone&#x2F;lp_feet_pattern.jpg">
+			<noscript>
+				<img src="&#x2F;images&#x2F;herringbone&#x2F;lp_feet_pattern.jpg">
+			</noscript>
+		</a>
+
+		
+	</figure>
+</div>
+<div>
+	<figure>
+		<a href="&#x2F;images&#x2F;herringbone&#x2F;lp_feet_solid.jpg" target="_blank">
+			<img class="lazy" data-src="&#x2F;images&#x2F;herringbone&#x2F;lp_feet_solid.jpg">
+			<noscript>
+				<img src="&#x2F;images&#x2F;herringbone&#x2F;lp_feet_solid.jpg">
+			</noscript>
+		</a>
+
+		
+	</figure>
+</div>
+<p>Next use the remaining M2×4 screws to install the bottom PCB to the standoffs. Be careful not to loosen the bottom and middle standoffs because like I mentioned, there is no way for you to access those after the switches are installed.</p>
+<div>
+	<figure>
+		<a href="&#x2F;images&#x2F;herringbone&#x2F;lp_bottom_screw.jpg" target="_blank">
+			<img class="lazy" data-src="&#x2F;images&#x2F;herringbone&#x2F;lp_bottom_screw.jpg">
+			<noscript>
+				<img src="&#x2F;images&#x2F;herringbone&#x2F;lp_bottom_screw.jpg">
+			</noscript>
+		</a>
+
+		
+	</figure>
+</div>
+<p>Finally, peel the acrylic cover, and install it on top of the tall standoffs using the remaining M2×8 screws. <strong>Be careful about static electricity build up when peeling the protective paper from the acrylic piece!</strong></p>
+<div>
+	<figure>
+		<a href="&#x2F;images&#x2F;herringbone&#x2F;lp_cover_screw.jpg" target="_blank">
+			<img class="lazy" data-src="&#x2F;images&#x2F;herringbone&#x2F;lp_cover_screw.jpg">
+			<noscript>
+				<img src="&#x2F;images&#x2F;herringbone&#x2F;lp_cover_screw.jpg">
+			</noscript>
+		</a>
+
+		
+	</figure>
+</div>
+<p>Finally, install your keycaps and you're done with the build!</p>
+<h3 id="high-profile-assembly">High Profile Assembly</h3>
+<p><em>NOTE: The following section applies to high profile kit owners.</em></p>
+<p>With the acrylic pieces separated, go ahead and peel the protective films from every layer. Again, <strong>be careful about static electricity build up when peeling the protective paper!</strong></p>
+<div>
+	<figure>
+		<a href="&#x2F;images&#x2F;herringbone&#x2F;hp_peel.jpg" target="_blank">
+			<img class="lazy" data-src="&#x2F;images&#x2F;herringbone&#x2F;hp_peel.jpg">
+			<noscript>
+				<img src="&#x2F;images&#x2F;herringbone&#x2F;hp_peel.jpg">
+			</noscript>
+		</a>
+
+		
+	</figure>
+</div>
+<div>
+	<figure>
+		<a href="&#x2F;images&#x2F;herringbone&#x2F;hp_peeled.jpg" target="_blank">
+			<img class="lazy" data-src="&#x2F;images&#x2F;herringbone&#x2F;hp_peeled.jpg">
+			<noscript>
+				<img src="&#x2F;images&#x2F;herringbone&#x2F;hp_peeled.jpg">
+			</noscript>
+		</a>
+
+		
+		<figcaption>
+			
+				All films peeled.
+				
+		</figcaption>
+		
+	</figure>
+</div>
+<p>Install the stabilizers on the main PCB, place your switches into the aluminum plate and place the 3mm support layer underneath the aluminum plate. Everglide/Durock stabilizers should fit but it's still a bit more tight than I'd like and would require a bit of finagling. Solder the switches in.</p>
+<div>
+	<figure>
+		<a href="&#x2F;images&#x2F;herringbone&#x2F;hp_switches.jpg" target="_blank">
+			<img class="lazy" data-src="&#x2F;images&#x2F;herringbone&#x2F;hp_switches.jpg">
+			<noscript>
+				<img src="&#x2F;images&#x2F;herringbone&#x2F;hp_switches.jpg">
+			</noscript>
+		</a>
+
+		
+		<figcaption>
+			
+				Switches installed.
+				
+		</figcaption>
+		
+	</figure>
+</div>
+<div>
+	<figure>
+		<a href="&#x2F;images&#x2F;herringbone&#x2F;hp_gap.jpg" target="_blank">
+			<img class="lazy" data-src="&#x2F;images&#x2F;herringbone&#x2F;hp_gap.jpg">
+			<noscript>
+				<img src="&#x2F;images&#x2F;herringbone&#x2F;hp_gap.jpg">
+			</noscript>
+		</a>
+
+		
+		<figcaption>
+			
+				Note that there&#x27;s a small gap between the PCB and support layer. The support layer won&#x27;t sit flush on the PCB.
+				
+		</figcaption>
+		
+	</figure>
+</div>
+<p>Install the aluminum cone feet now if you have any. Place the bottom layers on top of each other.</p>
+<div>
+	<figure>
+		<a href="&#x2F;images&#x2F;herringbone&#x2F;hp_feet.jpg" target="_blank">
+			<img class="lazy" data-src="&#x2F;images&#x2F;herringbone&#x2F;hp_feet.jpg">
+			<noscript>
+				<img src="&#x2F;images&#x2F;herringbone&#x2F;hp_feet.jpg">
+			</noscript>
+		</a>
+
+		
+	</figure>
+</div>
+<p>Mount the PCB assembly on to the layers. Tolerance around the holes are a bit tight as well, so just finagle your way so the standoffs will go in.</p>
+<div>
+	<figure>
+		<a href="&#x2F;images&#x2F;herringbone&#x2F;hp_pcb_installed.jpg" target="_blank">
+			<img class="lazy" data-src="&#x2F;images&#x2F;herringbone&#x2F;hp_pcb_installed.jpg">
+			<noscript>
+				<img src="&#x2F;images&#x2F;herringbone&#x2F;hp_pcb_installed.jpg">
+			</noscript>
+		</a>
+
+		
+	</figure>
+</div>
+<p>Mount the rest of the layers and then screw them on using the M2×8 screws, and you should be done!</p>
+<div>
+	<figure>
+		<a href="&#x2F;images&#x2F;herringbone&#x2F;hp_assemble_top.jpg" target="_blank">
+			<img class="lazy" data-src="&#x2F;images&#x2F;herringbone&#x2F;hp_assemble_top.jpg">
+			<noscript>
+				<img src="&#x2F;images&#x2F;herringbone&#x2F;hp_assemble_top.jpg">
+			</noscript>
+		</a>
+
+		
+	</figure>
+</div>
+<div>
+	<figure>
+		<a href="&#x2F;images&#x2F;herringbone&#x2F;hp_assembled.jpg" target="_blank">
+			<img class="lazy" data-src="&#x2F;images&#x2F;herringbone&#x2F;hp_assembled.jpg">
+			<noscript>
+				<img src="&#x2F;images&#x2F;herringbone&#x2F;hp_assembled.jpg">
+			</noscript>
+		</a>
+
+		
+	</figure>
+</div>
+<p>And now you're done! Fit the keycaps in and you should be good to go.</p>
+<h2 id="glamour-shots">Glamour Shots</h2>
+<div>
+	<figure>
+		<a href="&#x2F;images&#x2F;herringbone&#x2F;glamour_hipro.jpg" target="_blank">
+			<img class="lazy" data-src="&#x2F;images&#x2F;herringbone&#x2F;glamour_hipro.jpg">
+			<noscript>
+				<img src="&#x2F;images&#x2F;herringbone&#x2F;glamour_hipro.jpg">
+			</noscript>
+		</a>
+
+		
+	</figure>
+</div>
+<div>
+	<figure>
+		<a href="&#x2F;images&#x2F;herringbone&#x2F;glamour_hp1.jpg" target="_blank">
+			<img class="lazy" data-src="&#x2F;images&#x2F;herringbone&#x2F;glamour_hp1.jpg">
+			<noscript>
+				<img src="&#x2F;images&#x2F;herringbone&#x2F;glamour_hp1.jpg">
+			</noscript>
+		</a>
+
+		
+	</figure>
+</div>
+<div>
+	<figure>
+		<a href="&#x2F;images&#x2F;herringbone&#x2F;glamour_hp2.jpg" target="_blank">
+			<img class="lazy" data-src="&#x2F;images&#x2F;herringbone&#x2F;glamour_hp2.jpg">
+			<noscript>
+				<img src="&#x2F;images&#x2F;herringbone&#x2F;glamour_hp2.jpg">
+			</noscript>
+		</a>
+
+		
+	</figure>
+</div>
+<div>
+	<figure>
+		<a href="&#x2F;images&#x2F;herringbone&#x2F;glamour_hp3.jpg" target="_blank">
+			<img class="lazy" data-src="&#x2F;images&#x2F;herringbone&#x2F;glamour_hp3.jpg">
+			<noscript>
+				<img src="&#x2F;images&#x2F;herringbone&#x2F;glamour_hp3.jpg">
+			</noscript>
+		</a>
+
+		
+	</figure>
+</div>
+<div>
+	<figure>
+		<a href="&#x2F;images&#x2F;herringbone&#x2F;glamour_hp4.jpg" target="_blank">
+			<img class="lazy" data-src="&#x2F;images&#x2F;herringbone&#x2F;glamour_hp4.jpg">
+			<noscript>
+				<img src="&#x2F;images&#x2F;herringbone&#x2F;glamour_hp4.jpg">
+			</noscript>
+		</a>
+
+		
+	</figure>
+</div>
+<div>
+	<figure>
+		<a href="&#x2F;images&#x2F;herringbone&#x2F;glamour_hp5.jpg" target="_blank">
+			<img class="lazy" data-src="&#x2F;images&#x2F;herringbone&#x2F;glamour_hp5.jpg">
+			<noscript>
+				<img src="&#x2F;images&#x2F;herringbone&#x2F;glamour_hp5.jpg">
+			</noscript>
+		</a>
+
+		
+	</figure>
+</div>
+<div>
+	<figure>
+		<a href="&#x2F;images&#x2F;herringbone&#x2F;glamour_lopro.jpg" target="_blank">
+			<img class="lazy" data-src="&#x2F;images&#x2F;herringbone&#x2F;glamour_lopro.jpg">
+			<noscript>
+				<img src="&#x2F;images&#x2F;herringbone&#x2F;glamour_lopro.jpg">
+			</noscript>
+		</a>
+
+		
+	</figure>
+</div>
+<div>
+	<figure>
+		<a href="&#x2F;images&#x2F;herringbone&#x2F;glamour_lp1.jpg" target="_blank">
+			<img class="lazy" data-src="&#x2F;images&#x2F;herringbone&#x2F;glamour_lp1.jpg">
+			<noscript>
+				<img src="&#x2F;images&#x2F;herringbone&#x2F;glamour_lp1.jpg">
+			</noscript>
+		</a>
+
+		
+	</figure>
+</div>
+<h2 id="remarks">Remarks</h2>
+<p>Thanks to everyone who participated in this group buy! This was a fun project to design and make<a href="/images/herringbone/preview.jpg">.</a></p>
+
+    </div>
+
+    
+    
+
+    <div class="post-footer">
+        
+        
+        <div class="post-tags">
+            
+            <a href="https://rmi-kb.com/tags/mechanical-keyboards/">#Mechanical Keyboards</a>
+            
+            <a href="https://rmi-kb.com/tags/project/">#Project</a>
+            
+            <a href="https://rmi-kb.com/tags/herringbone/">#Herringbone</a>
+            
+        </div>
+        
+        
+        <div class="post-nav">
+            
+            <a class="previous" href="https:&#x2F;&#x2F;rmi-kb.com&#x2F;niz-ec60&#x2F;">‹ 60% Electrocapacitive (EC) Keyboard</a>
+            
+            
+            <a class="next" href="https:&#x2F;&#x2F;rmi-kb.com&#x2F;squishy65&#x2F;">Squishy65 - O-ring Gasket Mount Stacked Acrylic Keyboard ›</a>
+            
+            
+            
+        </div>
+        
+
+        
+
+    </div>
+
+    <!-- Disqus -->
+    <!--
+    <div id='disqus_thread'></div>
+    <script>
+        (function () {
+            var d = document, s = d.createElement('script');
+            s.src = 'https://ramonimbao.disqus.com/embed.js';
+            s.setAttribute('data-timestamp', +new Date());
+            (d.head || d.body).appendChild(s);
+        })();
+    </script>
+    <noscript>Please enable JavaScript to view the <a href='https://disqus.com/?ref_noscript' rel='nofollow'>comments
+            powered by Disqus.</a></noscript>
+        -->
+
+    
+    
+</article>
+
+
+            </div>
+        </main>
+
+        
+        
+    </div>
+
+      
+          <script>
+            document.addEventListener("DOMContentLoaded", function() {
+                yall({
+                    observeChanges: true
+                });
+            });
+          </script>
+          <script type="text/javascript" src="https://rmi-kb.com/even.js" ></script>
+      
+    </body>
+
+</html>
